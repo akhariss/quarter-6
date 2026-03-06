@@ -48,6 +48,7 @@ Pada tahap ini, Anda akan diberikan pilihan paket dukungan.
 
 ### 7. Aktivasi Akun
 Klik **Complete Sign Up**. AWS akan memproses aktivasi akun Anda. Biasanya memakan waktu beberapa menit, namun dalam beberapa kasus bisa hingga 24 jam. Anda akan menerima email konfirmasi jika akun sudah aktif.
+<img width="1722" height="817" alt="image" src="https://github.com/user-attachments/assets/415adf5b-2a15-4d45-82c1-5ff5f92a14c7" />
 
 ---
 
@@ -82,3 +83,4 @@ Setelah akun aktif, sangat disarankan untuk melakukan hal berikut:
 ## 🏁 Langkah Selanjutnya
 Selamat! Akun Anda sudah siap.
 **Langkah pertama yang disarankan:** Aktifkan **MFA (Multi-Factor Authentication)** pada akun Root Anda untuk keamanan maksimal sebelum mulai membuat *resource* apa pun.
+

@@ -6,76 +6,137 @@
 
 ## 📚 About This Repository
 
-This repository contains **lecture materials, lab guides, and project documentation** for Semester 6 courses. It serves as a centralized learning resource and reference for practical work in:
-
-- **Server Administration** - AWS Cloud, EC2, monitoring & billing
-- **Computer Vision** - Image processing, OpenCV, deep learning
-- **Natural Language Processing** - Text analysis, NLP pipelines
-- **Deep Learning** - Neural networks, model training
-- **Research Methodology** - Academic writing, research methods
+Repository ini berisi **materi kuliah, panduan praktikum, dan dokumentasi tugas** untuk Semester 6. Setiap mata kuliah memiliki README tersendiri yang menjelaskan struktur dan cara menggunakan materi di dalamnya.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Daftar Mata Kuliah
 
-```
-quarter-6/
-├── adm-server/          # Administrasi Server (AWS Cloud)
-│   ├── meet1/          # AWS Account Setup & Free Tier
-│   ├── meet2/          # EC2 Instance, Billing Alert
-│   └── meet3/          # SSH Remote, Web Server Setup
-│
-├── com-vis/            # Computer Vision
-│   ├── meet1/          # Introduction to CV
-│   ├── meet3/          # Image Processing
-│   └── meet4/          # Object Detection
-│
-├── deep-learn/         # Deep Learning
-│   └── meet 1/         # Neural Networks Basics
-│
-├── NLP/                # Natural Language Processing
-│   └── (materials)     # Text analysis, NLP pipelines
-│
-└── metopen/            # Metodologi Penelitian (Research Methods)
-    └── (assignments)   # Research proposals, academic writing
-```
+| Mata Kuliah | Folder | Status |
+|-------------|--------|--------|
+| **Administrasi Server** | [`adm-server/`](adm-server/README.md) | ✅ Praktikum Lengkap |
+| **Computer Vision** | [`com-vis/`](com-vis/README.md) | ✅ Praktikum Lengkap |
+| **Deep Learning** | [`deep-learn/`](deep-learn/README.md) | 📁 Materi Dasar |
+| **Natural Language Processing** | [`NLP/`](NLP/README.md) | 📁 Materi & Tugas |
+| **Metodologi Penelitian** | [`metopen/`](metopen/README.md) | 📁 Materi & Tugas |
+| **Cyber Security** | [`cyber-sec/`](cyber-sec/README.md) | 📁 Tugas |
 
 ---
 
 ## 🚀 Quick Start
 
-### Administrasi Server - AWS Practicum
+### Administrasi Server (AWS)
 
-If you're following the AWS server administration labs, start here:
+Mulai dari sini jika baru belajar cloud computing:
 
-1. **[Meet 1: AWS Account Setup](adm-server/meet1/AWS-Account.md)** - Create AWS account & claim Free Tier
-2. **[Meet 2: EC2 Instance](adm-server/meet2/create_ec2.md)** - Launch your first virtual server
-3. **[Meet 2: Billing Alert](adm-server/meet2/Billing-Alert.md)** - Set up cost monitoring
-4. **[Meet 3: SSH & Web Server](adm-server/meet3/Remote-SSH&web-server.md)** - Remote access & Nginx setup
+```bash
+cd adm-server
+```
+
+**Urutan Praktikum:**
+1. [AWS Account Setup](adm-server/meet1/AWS-Account.md) - Buat akun & klaim Free Tier
+2. [EC2 Instance](adm-server/meet2/create_ec2.md) - Launch server virtual
+3. [Billing Alert](adm-server/meet2/Billing-Alert.md) - Setup monitoring biaya
+4. [SSH & Web Server](adm-server/meet3/Remote-SSH&web-server.md) - Remote access & Nginx
+
+📖 **Lengkapnya:** [`adm-server/README.md`](adm-server/README.md)
+
+---
 
 ### Computer Vision
 
 ```bash
-# Navigate to com-vis directory
 cd com-vis
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-See [`com-vis/requirements.txt`](com-vis/requirements.txt) for required packages.
+**Praktikum:**
+- Meet 1: Pengantar CV & Matematika Deep Learning
+- Meet 3: Transformasi Citra
+- Meet 4: Object Detection
+
+📖 **Lengkapnya:** [`com-vis/README.md`](com-vis/README.md)
 
 ---
 
-## 📋 Course Overview
+### Deep Learning
 
-| Code | Course | Topics Covered | Status |
-|------|--------|----------------|--------|
-| - | **Administrasi Server** | AWS Cloud, EC2, SSH, Monitoring, Billing Alert | ✅ In Progress |
-| - | **Computer Vision** | Image Processing, OpenCV, Object Detection | ✅ In Progress |
-| - | **Deep Learning** | Neural Networks, CNN, Model Training | ✅ In Progress |
-| - | **NLP** | Text Analysis, Sentiment Analysis, NLP Pipelines | 📁 Materials |
-| - | **Metopen** | Research Methods, Academic Writing | 📁 Materials |
+```bash
+cd deep-learn
+jupyter notebook meet\ 1/tugas1-Abdul_Kharis-238801004.ipynb
+```
+
+📖 **Lengkapnya:** [`deep-learn/README.md`](deep-learn/README.md)
+
+---
+
+### Natural Language Processing
+
+```bash
+cd NLP
+pip install nltk spacy pandas numpy
+jupyter notebook turi3cv.ipynb
+```
+
+📖 **Lengkapnya:** [`NLP/README.md`](NLP/README.md)
+
+---
+
+### Metodologi Penelitian
+
+Materi dan tugas metodologi penelitian ilmiah.
+
+📖 **Lengkapnya:** [`metopen/README.md`](metopen/README.md)
+
+---
+
+### Cyber Security
+
+Tugas-tugas keamanan siber (jaringan & kriptografi).
+
+📖 **Lengkapnya:** [`cyber-sec/README.md`](cyber-sec/README.md)
+
+---
+
+## 📊 Repository Structure
+
+```
+quarter-6/
+├── adm-server/           # Administrasi Server (AWS)
+│   ├── README.md
+│   ├── meet1/           # AWS Account Setup
+│   ├── meet2/           # EC2 & Billing
+│   └── meet3/           # SSH & Web Server
+│
+├── com-vis/             # Computer Vision
+│   ├── README.md
+│   ├── meet1/           # Pengantar CV
+│   ├── meet3/           # Image Processing
+│   └── meet4/           # Object Detection
+│
+├── deep-learn/          # Deep Learning
+│   ├── README.md
+│   └── meet 1/          # Neural Networks
+│
+├── NLP/                 # Natural Language Processing
+│   ├── README.md
+│   ├── LK1_*.pdf        # Lembar Kerja 1
+│   └── turi3cv.ipynb
+│
+├── metopen/             # Metodologi Penelitian
+│   ├── README.md
+│   ├── materi 1.pdf
+│   ├── materi 2.pdf
+│   └── Tugas2_*.pdf
+│
+├── cyber-sec/           # Cyber Security
+│   ├── README.md
+│   ├── Tugas4_*.pdf
+│   └── Tugas5_*.pdf
+│
+├── LICENSE
+└── README.md
+```
 
 ---
 
@@ -83,30 +144,35 @@ See [`com-vis/requirements.txt`](com-vis/requirements.txt) for required packages
 
 ### Cloud & DevOps
 - **AWS** - EC2, CloudWatch, SNS, Billing
-- **SSH** - Remote server access
-- **PuTTY** - SSH client for Windows
+- **SSH/PuTTY** - Remote server access
 
-### Programming & Frameworks
-- **Python** - Primary language for CV, NLP, DL
-- **OpenCV** - Computer Vision
-- **TensorFlow / PyTorch** - Deep Learning
-- **NLTK / spaCy** - NLP
+### Programming Languages
+- **Python** - Primary language untuk CV, NLP, DL
+
+### Libraries & Frameworks
+| Domain | Libraries |
+|--------|-----------|
+| Computer Vision | OpenCV, NumPy, Matplotlib |
+| Deep Learning | TensorFlow, PyTorch, Keras |
+| NLP | NLTK, spaCy, Transformers |
+| General | Pandas, Scikit-learn, Jupyter |
 
 ### Other
-- **Jupyter Notebook** - Interactive coding & documentation
+- **Jupyter Notebook** - Interactive coding
 - **Git & GitHub** - Version control
 
 ---
 
 ## 📝 License
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this work for educational and commercial purposes.
+This repository is licensed under the [MIT License](LICENSE). Feel free to use this for learning and reference.
 
 ---
 
 ## 👨‍💻 Author
 
 **Abdul Kharis**  
+NIM: 2388010004  
 Informatics Engineering - Semester 6  
 Academic Year 2025/2026
 
@@ -114,20 +180,11 @@ Academic Year 2025/2026
 
 ## 🤝 Contributing
 
-This is a personal academic repository. However, if you find any errors or have suggestions for improvement, feel free to:
+This is a personal academic repository. If you find any errors or have suggestions:
 
-1. Open an issue describing the problem
-2. Submit a pull request with fixes
-3. Contact me directly for collaboration
-
----
-
-## 📞 Contact
-
-For questions or collaboration inquiries, please reach out via:
-- **Email:** [Your Email]
-- **LinkedIn:** [Your Profile]
-- **GitHub:** [@abdulkharis](https://github.com/abdulkharis)
+1. Open an issue
+2. Submit a pull request
+3. Contact me directly
 
 ---
 

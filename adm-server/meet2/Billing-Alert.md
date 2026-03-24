@@ -7,6 +7,7 @@
 ## 🎯 Tujuan Praktikum
 
 Setelah mengikuti praktikum ini, kamu akan:
+
 - Memahami pentingnya monitoring biaya di AWS
 - Mampu membuat alarm notifikasi saat biaya mendekati batas
 - Mengerti cara kerja CloudWatch dan SNS untuk billing alert
@@ -26,10 +27,10 @@ Setelah mengikuti praktikum ini, kamu akan:
 5. Klik **Edit**
 6. Isi data berikut:
 
-| Field | Isi |
-|-------|-----|
-| Email | Email aktif kamu |
-| Receive Billing Alerts | ✅ Centang |
+| Field                          | Isi                   |
+| ------------------------------ | --------------------- |
+| Email                          | Email aktif kamu      |
+| Receive Billing Alerts         | ✅ Centang            |
 | Receive Free Tier Usage Alerts | ✅ Centang (opsional) |
 
 7. Klik **Update**
@@ -66,10 +67,10 @@ Setelah mengikuti praktikum ini, kamu akan:
 
 Konfigurasi kondisi alarm:
 
-| Setting | Nilai |
-|---------|-------|
-| Type | Static |
-| Whenever... is | Greater (>) |
+| Setting         | Nilai                               |
+| --------------- | ----------------------------------- |
+| Type            | Static                              |
+| Whenever... is  | Greater (>)                         |
 | Threshold value | `1` (atau sesuai instruksi dosen) |
 
 > 💡 **Tips:** Threshold $1 berarti kamu akan dapat notifikasi saat biaya melebihi $1 (sekitar Rp 15.000).
@@ -118,36 +119,36 @@ Konfigurasi kondisi alarm:
 3. Cari alarm `NIM_BillingAlert`
 4. Cek status:
 
-| Status | Arti |
-|--------|------|
-| OK | Alarm aktif, biaya di bawah threshold |
-| In Alarm | Biaya sudah melebihi threshold |
-| Pending | Menunggu konfirmasi email |
+| Status   | Arti                                  |
+| -------- | ------------------------------------- |
+| OK       | Alarm aktif, biaya di bawah threshold |
+| In Alarm | Biaya sudah melebihi threshold        |
+| Pending  | Menunggu konfirmasi email             |
 
 ---
 
 ## 📝 Checklist Hasil Praktikum
 
-- [ ] Billing Preferences sudah diaktifkan
-- [ ] CloudWatch alarm berhasil dibuat
-- [ ] SNS topic sudah dibuat dengan nama sesuai format
-- [ ] Email subscription sudah dikonfirmasi
-- [ ] Status alarm = OK (atau Insufficient Data)
+- [X] Billing Preferences sudah diaktifkan
+- [X] CloudWatch alarm berhasil dibuat
+- [X] SNS topic sudah dibuat dengan nama sesuai format
+- [X] Email subscription sudah dikonfirmasi
+- [X] Status alarm = OK (atau Insufficient Data)
 
 ---
 
 ## ❓ FAQ
 
-**Q: Kenapa harus region US East (N. Virginia)?**  
+**Q: Kenapa harus region US East (N. Virginia)?**
 A: AWS menyimpan data billing global di region tersebut. Metrik billing tidak tersedia di region lain.
 
-**Q: Berapa threshold yang disarankan?**  
+**Q: Berapa threshold yang disarankan?**
 A: Untuk pembelajaran, $1 cukup untuk early warning. Bisa disesuaikan dengan budget masing-masing.
 
-**Q: Kenapa email tidak diterima?**  
+**Q: Kenapa email tidak diterima?**
 A: Cek folder spam. Pastikan email yang dimasukkan benar dan aktif.
 
-**Q: Kapan alarm akan trigger?**  
+**Q: Kapan alarm akan trigger?**
 A: Data billing update setiap 24 jam. Alarm tidak real-time.
 
 ---

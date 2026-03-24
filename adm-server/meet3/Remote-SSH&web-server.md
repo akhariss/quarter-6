@@ -7,6 +7,7 @@
 ## 🎯 Tujuan Praktikum
 
 Setelah mengikuti praktikum ini, kamu akan:
+
 - Mampu melakukan remote connection ke EC2 instance via SSH
 - Memahami cara kerja key pair authentication
 - Mampu melakukan patching OS server
@@ -35,7 +36,7 @@ Setelah mengikuti praktikum ini, kamu akan:
 
 ### 2. Konversi Key Pair (.pem → .ppk)
 
-> 🔑 **Kenapa harus dikonversi?**  
+> 🔑 **Kenapa harus dikonversi?**
 > File `.pem` dari AWS format untuk Linux/Mac. PuTTY di Windows butuh format `.ppk`.
 
 1. Buka **PuTTYgen**
@@ -54,20 +55,20 @@ Setelah mengikuti praktikum ini, kamu akan:
 1. Buka **PuTTY**
 2. Konfigurasi berikut:
 
-| Field | Isi |
-|-------|-----|
+| Field                     | Isi                                   |
+| ------------------------- | ------------------------------------- |
 | Host Name (or IP address) | Public IPv4 Address dari EC2 instance |
-| Port | `22` |
-| Connection type | SSH |
+| Port                      | `22`                                |
+| Connection type           | SSH                                   |
 
 3. Load private key:
+
    - Navigasi ke: **Connection** → **SSH** → **Auth** → **Credentials**
    - Browse file `.ppk` yang sudah dibuat
-
 4. (Opsional) Save session:
+
    - Kembali ke **Session**
    - Isi **Saved Sessions**, klik **Save**
-
 5. Klik **Open**
 
 ![alt text](image/image-2.png)
@@ -82,6 +83,7 @@ Setelah mengikuti praktikum ini, kamu akan:
    ```
 
 > ⚠️ **Username tergantung OS:**
+>
 > - Ubuntu → `ubuntu`
 > - Amazon Linux → `ec2-user`
 > - CentOS → `centos`
@@ -95,7 +97,7 @@ Setelah mengikuti praktikum ini, kamu akan:
 
 ### 5. Patching OS (Wajib!)
 
-> 💡 **Kenapa patching?**  
+> 💡 **Kenapa patching?**
 > Server yang baru dibuat perlu diupdate untuk keamanan dan stabilitas.
 
 Jalankan command berikut:
@@ -104,9 +106,9 @@ Jalankan command berikut:
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-| Command | Fungsi |
-|---------|--------|
-| `sudo apt-get update` | Update daftar paket dari repository |
+| Command                  | Fungsi                               |
+| ------------------------ | ------------------------------------ |
+| `sudo apt-get update`  | Update daftar paket dari repository  |
 | `sudo apt-get upgrade` | Install versi terbaru paket yang ada |
 
 Proses ini bisa memakan waktu 2-10 menit.
@@ -123,18 +125,15 @@ sudo apt install nginx
 
 Tunggu hingga instalasi selesai.
 
-![alt text](image/image-3.png)
-![alt text](image/image-4.png)
-
 ---
 
 ### 7. Verifikasi Nginx
 
 1. Cek status service:
+
    ```bash
    systemctl status nginx
    ```
-
 2. Pastikan statusnya **active (running)**
 
 ![1774325889375](image/1774325889375.png)
@@ -154,27 +153,27 @@ Tunggu hingga instalasi selesai.
 
 ## 📝 Checklist Hasil Praktikum
 
-- [ ] PuTTY terinstall dan berfungsi
-- [ ] Key pair berhasil dikonversi ke .ppk
-- [ ] Berhasil login ke server via SSH
-- [ ] OS sudah diupdate (patching selesai)
-- [ ] Nginx terinstall dan status active (running)
-- [ ] Web server bisa diakses via browser
+- [X] PuTTY terinstall dan berfungsi
+- [X] Key pair berhasil dikonversi ke .ppk
+- [X] Berhasil login ke server via SSH
+- [X] OS sudah diupdate (patching selesai)
+- [X] Nginx terinstall dan status active (running)
+- [X] Web server bisa diakses via browser
 
 ---
 
 ## ❓ FAQ
 
-**Q: Kenapa tidak bisa connect via SSH?**  
+**Q: Kenapa tidak bisa connect via SSH?**
 A: Cek Security Group di EC2 — pastikan port 22 (SSH) sudah dibuka.
 
-**Q: "Server refused our key" — apa artinya?**  
+**Q: "Server refused our key" — apa artinya?**
 A: Key pair yang digunakan salah atau tidak cocok. Pastikan load file .ppk yang benar.
 
-**Q: Kenapa harus patching setiap kali remote?**  
+**Q: Kenapa harus patching setiap kali remote?**
 A: Best practice keamanan server. OS yang baru dibuat mungkin punya vulnerability yang sudah di-patch di versi terbaru.
 
-**Q: Command untuk keluar dari SSH?**  
+**Q: Command untuk keluar dari SSH?**
 A: Ketik `exit` atau tekan `Ctrl+D`
 
 ---

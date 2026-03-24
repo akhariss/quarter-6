@@ -7,6 +7,7 @@
 ## 🎯 Tujuan Praktikum
 
 Setelah mengikuti praktikum ini, kamu akan:
+
 - Memahami cara membuat virtual server (EC2) di AWS
 - Mengerti konfigurasi dasar yang diperlukan untuk instance
 - Mampu menyiapkan server untuk keperluan praktikum selanjutnya
@@ -35,14 +36,17 @@ Klik dropdown region di pojok kanan atas dan pilih region terdekat (disarankan *
 ### 3. Konfigurasi Instance
 
 #### a. Nama Instance
+
 - Isi nama dengan format: **`NIM_Server6A`**
 - Contoh: `2388010004_Server6A`
 
 #### b. Application and OS Images (AMI)
+
 - Pilih **Ubuntu Server 22.04 LTS**
 - Pastikan ada label **Free Tier eligible**
 
 #### c. Instance Type
+
 - Pilih **t3.micro**
 - Ini adalah tipe instance yang termasuk dalam Free Tier AWS
 
@@ -66,9 +70,9 @@ Klik dropdown region di pojok kanan atas dan pilih region terdekat (disarankan *
 
 Di bagian ini, centang opsi berikut:
 
-- [x] **Allow SSH traffic** (Port 22) — untuk akses remote
-- [x] **Allow HTTPS traffic** (Port 443) — untuk web aman
-- [x] **Allow HTTP traffic** (Port 80) — untuk web standar
+- [X] **Allow SSH traffic** (Port 22) — untuk akses remote
+- [X] **Allow HTTPS traffic** (Port 443) — untuk web aman
+- [X] **Allow HTTP traffic** (Port 80) — untuk web standar
 
 ---
 
@@ -92,11 +96,11 @@ Di bagian ini, centang opsi berikut:
 
 Pastikan instance yang baru dibuat memiliki:
 
-| Item | Status |
-|------|--------|
-| Name | `NIM_Server6A` |
+| Item           | Status             |
+| -------------- | ------------------ |
+| Name           | `NIM_Server6A`   |
 | Instance state | ✅ running (hijau) |
-| Status check | 2/2 checks passed |
+| Status check   | 2/2 checks passed  |
 
 ![1772768692137](image/create_ec2/1772768692137.png)
 
@@ -106,23 +110,23 @@ Pastikan instance yang baru dibuat memiliki:
 
 ## 📝 Checklist Hasil Praktikum
 
-- [ ] Instance berhasil dibuat dengan nama sesuai format
-- [ ] Key pair tersimpan dengan aman
-- [ ] Security Group sudah membuka port SSH, HTTP, HTTPS
-- [ ] Storage 30 GiB (Free Tier)
-- [ ] Status instance running dan healthy
+- [X] Instance berhasil dibuat dengan nama sesuai format
+- [X] Key pair tersimpan dengan aman
+- [X] Security Group sudah membuka port SSH, HTTP, HTTPS
+- [X] Storage 30 GiB (Free Tier)
+- [X] Status instance running dan healthy
 
 ---
 
 ## ❓ FAQ
 
-**Q: Kenapa harus region Singapore?**  
+**Q: Kenapa harus region Singapore?**
 A: Region terdekat memberikan latency lebih rendah. Tapi ikuti instruksi dosen jika berbeda.
 
-**Q: Apa yang terjadi jika key pair hilang?**  
+**Q: Apa yang terjadi jika key pair hilang?**
 A: Kamu tidak bisa login ke server. Harus buat instance baru dengan key pair baru.
 
-**Q: Berapa biaya instance t3.micro?**  
+**Q: Berapa biaya instance t3.micro?**
 A: Termasuk Free Tier — gratis 750 jam/bulan selama 12 bulan pertama.
 
 ---

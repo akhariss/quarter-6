@@ -1,66 +1,155 @@
-# Panduan Lengkap: Membuat Billing Alert di AWS
+# Praktikum 2: Billing Alert — Monitoring Biaya AWS
 
-**Tujuan:** Menghindari pembengkakan biaya (over-budget) dengan mengatur notifikasi otomatis jika penggunaan saldo melebihi ambang batas yang ditentukan.
-
----
-
-## 1. Konfigurasi Billing Preferences
-
-Sebelum membuat alarm, Anda harus mengaktifkan izin agar AWS dapat memantau dan mengirimkan data tagihan ke layanan monitoring.
-
-1. **Masuk ke Billing Dashboard:**
-   - Buka **AWS Management Console**.
-   - Cari dan pilih menu **Billing and Cost Management**.
-2. **Atur Alert Preference:**
-   - Di panel navigasi kiri, klik **Alert Preference** (atau *Billing Preferences*).
-   - Klik tombol **Edit**.
-3. **Aktivasi Notifikasi:**
-   - **Email:** Masukkan alamat email aktif Anda.
-   - **Ceklis:** Pastikan opsi **Receive Billing Alerts** dicentang.
-   - (Opsional) Centang **Receive Free Tier Usage Alerts** untuk mengetahui jika kuota gratis hampir habis.
-4. **Simpan:** Klik **Update**.
+**Administrasi Server - Pertemuan 2**
 
 ---
 
-## 2. Membuat CloudWatch Billing Alarm
+## 🎯 Tujuan Praktikum
 
-CloudWatch adalah layanan yang akan memicu peringatan berdasarkan nominal uang yang Anda tentukan.
-
-1. **Pindah Region:**
-   - **PENTING:** Pastikan Region di pojok kanan atas diatur ke **US East (N. Virginia)** atau `us-east-1`. Metrik penagihan hanya tersedia di region ini.
-2. **Buka CloudWatch:**
-   - Cari dan pilih layanan **CloudWatch** dari menu *All Services*.
-3. **Konfigurasi Metric:**
-   - Klik menu **Create Alarm**.
-   - Klik tombol **Select Metric**.
-   - Pilih kategori **Billing** > **Total Estimated Charge**.
-   - Ceklis mata uang **USD** dan klik **Select Metric**.
-4. **Menentukan Ambang Batas (Conditions):**
-   - **Type:** Pilih **Static**.
-   - **Whenever... is:** Pilih **Greater than (>)**.
-   - **Threshold:** Masukkan angka nominal (Contoh: `1` untuk alert jika biaya mencapai $1).
-5. **Konfigurasi Notifikasi (SNS):**
-   - Pilih **Create new topic**.
-   - Beri nama topik: `NIM_BillingAlert`.
-   - Klik **Create Topic**.
-     ![1772766489677](image/Billing-Allert/1772766489677.png)
-6. **Finalisasi:**
-   - Klik **Next**, masukkan Alarm Name: `NIM_BillingAlert`.
-   - Klik **Create Alarm**.
+Setelah mengikuti praktikum ini, kamu akan:
+- Memahami pentingnya monitoring biaya di AWS
+- Mampu membuat alarm notifikasi saat biaya mendekati batas
+- Mengerti cara kerja CloudWatch dan SNS untuk billing alert
 
 ---
 
-## 3. Verifikasi Keamanan (Langkah Wajib)
+## 📋 Langkah Kerja
 
-Alarm tidak akan aktif mengirim email jika langkah ini dilewati:
+### 1. Aktifkan Billing Preferences
 
-1. Buka **Inbox** atau **Spam** pada email yang didaftarkan.
+> ⚠️ **Penting:** Langkah ini wajib dilakukan pertama kali. Tanpa ini, AWS tidak akan mengirim notifikasi billing.
 
-   ![1772768788446](image/Billing-Alert/1772768788446.png)
-2. Cari email dari AWS (Simple Notification Service).
-3. Klik tautan **Confirm Subscription**.
-4. Status alarm di CloudWatch akan berubah dari *Pending* menjadi *OK* atau *In Alarm*.
+1. Login ke **AWS Management Console**
+2. Cari **"Billing"** di kolom pencarian
+3. Klik **Billing and Cost Management**
+4. Di menu kiri, pilih **Alert Preferences**
+5. Klik **Edit**
+6. Isi data berikut:
+
+| Field | Isi |
+|-------|-----|
+| Email | Email aktif kamu |
+| Receive Billing Alerts | ✅ Centang |
+| Receive Free Tier Usage Alerts | ✅ Centang (opsional) |
+
+7. Klik **Update**
 
 ---
 
-*Dokumentasi ini dibuat untuk keperluan monitoring tugas kuliah Informatika Semester 6.*
+### 2. Pindah Region ke US East (N. Virginia)
+
+> 🚨 **PENTING:** Metrik billing hanya tersedia di region ini!
+
+1. Klik dropdown region di pojok kanan atas
+2. Pilih **US East (N. Virginia)** atau `us-east-1`
+
+---
+
+### 3. Buka CloudWatch
+
+1. Cari **"CloudWatch"** di kolom pencarian
+2. Klik layanan tersebut
+3. Di menu kiri, klik **Alarms** → **Create alarm**
+
+---
+
+### 4. Pilih Metrik Billing
+
+1. Klik **Select metric**
+2. Pilih **Billing** → **Total Estimated Charge**
+3. Centang **USD**
+4. Klik **Select metric**
+
+---
+
+### 5. Tentukan Threshold (Ambang Batas)
+
+Konfigurasi kondisi alarm:
+
+| Setting | Nilai |
+|---------|-------|
+| Type | Static |
+| Whenever... is | Greater (>) |
+| Threshold value | `1` (atau sesuai instruksi dosen) |
+
+> 💡 **Tips:** Threshold $1 berarti kamu akan dapat notifikasi saat biaya melebihi $1 (sekitar Rp 15.000).
+
+---
+
+### 6. Konfigurasi Notifikasi (SNS)
+
+1. Pilih **Create new topic**
+2. Nama topic: `NIM_BillingAlert` (contoh: `2388010004_BillingAlert`)
+3. Email: masukkan email yang sama seperti di Billing Preferences
+4. Klik **Create topic**
+
+![1772766489677](image/Billing-Allert/1772766489677.png)
+
+---
+
+### 7. Finalisasi Alarm
+
+1. Klik **Next**
+2. Alarm name: `NIM_BillingAlert`
+3. Review konfigurasi
+4. Klik **Create alarm**
+
+---
+
+### 8. Konfirmasi Subscription (WAJIB!)
+
+> ⚠️ **Langkah ini sering dilewatkan!** Alarm tidak akan mengirim email sebelum dikonfirmasi.
+
+1. Buka **inbox email** yang didaftarkan
+2. Cari email dari **AWS Notifications**
+3. Subjek: *AWS Notification - Subscription Confirmation*
+4. Buka email dan klik **Confirm subscription**
+
+![1772768788446](image/Billing-Alert/1772768788446.png)
+
+> 📌 **Cek folder spam** jika email tidak muncul di inbox!
+
+---
+
+### 9. Verifikasi Status Alarm
+
+1. Kembali ke **CloudWatch Console**
+2. Buka **Alarms** → **All alarms**
+3. Cari alarm `NIM_BillingAlert`
+4. Cek status:
+
+| Status | Arti |
+|--------|------|
+| OK | Alarm aktif, biaya di bawah threshold |
+| In Alarm | Biaya sudah melebihi threshold |
+| Pending | Menunggu konfirmasi email |
+
+---
+
+## 📝 Checklist Hasil Praktikum
+
+- [ ] Billing Preferences sudah diaktifkan
+- [ ] CloudWatch alarm berhasil dibuat
+- [ ] SNS topic sudah dibuat dengan nama sesuai format
+- [ ] Email subscription sudah dikonfirmasi
+- [ ] Status alarm = OK (atau Insufficient Data)
+
+---
+
+## ❓ FAQ
+
+**Q: Kenapa harus region US East (N. Virginia)?**  
+A: AWS menyimpan data billing global di region tersebut. Metrik billing tidak tersedia di region lain.
+
+**Q: Berapa threshold yang disarankan?**  
+A: Untuk pembelajaran, $1 cukup untuk early warning. Bisa disesuaikan dengan budget masing-masing.
+
+**Q: Kenapa email tidak diterima?**  
+A: Cek folder spam. Pastikan email yang dimasukkan benar dan aktif.
+
+**Q: Kapan alarm akan trigger?**  
+A: Data billing update setiap 24 jam. Alarm tidak real-time.
+
+---
+
+*Dokumentasi praktikum Administrasi Server Semester 6*

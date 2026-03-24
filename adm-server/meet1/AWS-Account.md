@@ -1,86 +1,180 @@
-# Panduan Lengkap: Membuat Akun AWS & Klaim Free Tier (Edisi 2026)
+# Praktikum 1: Membuat Akun AWS & Klaim Free Tier
 
-Dokumen ini berisi langkah-langkah detail untuk mendaftar akun Amazon Web Services (AWS) dan memanfaatkan program **Free Tier** agar Anda bisa belajar cloud computing secara gratis tanpa biaya tak terduga.
-
----
-
-## 📋 Persiapan Sebelum Mendaftar
-Sebelum memulai, pastikan Anda telah menyiapkan hal-hal berikut:
-1. **Alamat Email Aktif**: Belum pernah digunakan untuk mendaftar AWS sebelumnya.
-2. **Kartu Kredit/Debit**: Kartu yang mendukung transaksi internasional (Visa/Mastercard/Amex). Pastikan ada saldo minimal (sekitar Rp 15.000 - Rp 20.000) untuk verifikasi.
-3. **Nomor Telepon Aktif**: Untuk verifikasi identitas melalui SMS atau panggilan.
-4. **Alamat Lengkap**: Sesuai dengan data penagihan kartu Anda.
+**Administrasi Server - Pertemuan 1**
 
 ---
 
-## 🚀 Langkah-langkah Pendaftaran
+## 🎯 Tujuan Praktikum
 
-### 1. Kunjungi Halaman Pendaftaran
-Buka browser dan akses [portal.aws.amazon.com](https://portal.aws.amazon.com/billing/signup). Klik tombol **"Create a new AWS account"**.
+Setelah mengikuti praktikum ini, kamu akan:
+- Memahami cara mendaftar akun AWS dengan benar
+- Mengerti program Free Tier dan batasannya
+- Mampu menghindari tagihan tak terduga saat belajar AWS
 
-### 2. Informasi Login & Verifikasi Email
-* Masukkan **Email Address** dan **AWS Account Name** (nama akun bebas).
-* Klik **Verify email address**. Masukkan kode verifikasi yang dikirim ke email Anda.
-* Buat **Root User Password** yang kuat (minimal 8 karakter, kombinasi huruf besar, kecil, angka, dan simbol).
+---
+
+## 📋 Persiapan
+
+Sebelum mendaftar, siapkan hal-hal berikut:
+
+| Item | Keterangan |
+|------|-----------|
+| Email aktif | Belum pernah digunakan untuk daftar AWS |
+| Kartu Kredit/Debit | Visa/Mastercard/Amex dengan saldo minimal ~Rp 20.000 |
+| Nomor telepon aktif | Untuk verifikasi SMS/call |
+| Alamat lengkap | Sesuai data penagihan kartu |
+
+> 💡 **Catatan:** AWS akan melakukan temporary hold ~$1 USD untuk verifikasi kartu. Dana akan dikembalikan dalam beberapa hari.
+
+---
+
+## Langkah Kerja
+
+### 1. Buka Halaman Pendaftaran
+
+1. Buka browser, akses:
+   ```
+   https://portal.aws.amazon.com/billing/signup
+   ```
+2. Klik **Create a new AWS account**
+
+---
+
+### 2. Verifikasi Email
+
+1. Masukkan **Email Address** dan **AWS Account Name**
+2. Klik **Verify email address**
+3. Masukkan kode verifikasi dari email
+4. Buat **Root User Password** yang kuat:
+   - Minimal 8 karakter
+   - Kombinasi huruf besar, kecil, angka, simbol
+
+---
 
 ### 3. Informasi Kontak
-* Pilih **Account Type**:
-  * **Personal**: Untuk belajar, proyek pribadi, atau portofolio.
-  * **Business**: Untuk keperluan perusahaan/kantor.
-* Isi Nama Lengkap, Nomor Telepon, dan Alamat sesuai identitas.
-* Centang persetujuan *AWS Customer Agreement*.
 
-### 4. Informasi Pembayaran (Billing)
-Masukkan detail kartu kredit atau debit Anda. 
-> **Catatan Penting:** AWS akan melakukan penahanan dana sementara (temporary hold) sekitar **$1 USD** (sekitar Rp 15.000) untuk memverifikasi validitas kartu. Saldo ini biasanya akan dikembalikan dalam beberapa hari.
+1. Pilih **Account Type**:
+   - **Personal** — untuk belajar/proyek pribadi
+   - **Business** — untuk keperluan perusahaan
+
+2. Isi data berikut:
+   - Nama Lengkap
+   - Nomor Telepon
+   - Alamat sesuai identitas
+
+3. Centang persetujuan **AWS Customer Agreement**
+
+---
+
+### 4. Informasi Pembayaran
+
+1. Masukkan detail kartu kredit/debit kamu
+2. Pastikan kartu mendukung transaksi internasional
+
+---
 
 ### 5. Verifikasi Identitas
-* Masukkan nomor ponsel Anda.
-* Pilih metode verifikasi: **SMS** atau **Voice Call**.
-* Masukkan kode PIN yang Anda terima ke dalam kolom yang tersedia di layar.
 
-### 6. Memilih Support Plan (Klaim Free Tier)
-Pada tahap ini, Anda akan diberikan pilihan paket dukungan.
-* Pilih **Basic Support – Free**. 
-* **Jangan** pilih Developer atau Business Support kecuali Anda siap membayar biaya bulanan mulai dari $29/bulan.
+1. Masukkan nomor ponsel
+2. Pilih metode verifikasi: **SMS** atau **Voice Call**
+3. Masukkan kode PIN yang diterima
 
+---
 
+### 6. Pilih Support Plan (Klaim Free Tier)
 
-### 7. Aktivasi Akun
-Klik **Complete Sign Up**. AWS akan memproses aktivasi akun Anda. Biasanya memakan waktu beberapa menit, namun dalam beberapa kasus bisa hingga 24 jam. Anda akan menerima email konfirmasi jika akun sudah aktif.
+> ⚠️ **PENTING:** Pilih yang benar agar tidak kena biaya bulanan!
+
+1. Pilih **Basic Support – Free**
+2. **JANGAN** pilih Developer atau Business Support (mulai dari $29/bulan)
+
 <img width="1722" height="817" alt="image" src="https://github.com/user-attachments/assets/415adf5b-2a15-4d45-82c1-5ff5f92a14c7" />
 
 ---
 
-## 💡 Apa Saja yang Didapat di Free Tier?
+### 7. Aktivasi Akun
 
-AWS Free Tier terdiri dari tiga jenis penawaran:
-1. **Always Free**: Gratis selamanya selama tidak melebihi batas (contoh: Lambda 1 juta request/bulan).
-2. **12 Months Free**: Gratis selama satu tahun sejak pendaftaran (contoh: EC2 750 jam/bulan).
-3. **Trials**: Uji coba gratis jangka pendek untuk layanan tertentu (contoh: SageMaker 2 bulan).
+1. Klik **Complete Sign Up**
+2. Tunggu proses aktivasi (beberapa menit - 24 jam)
+3. Cek email untuk konfirmasi akun aktif
 
-| Layanan Utama | Kuota Free Tier |
-| :--- | :--- |
-| **Amazon EC2** | 750 jam/bulan (Tipe instance t2.micro atau t3.micro) |
-| **Amazon S3** | 5 GB Storage (Standard Storage) |
-| **Amazon RDS** | 750 jam/bulan (Database seperti MySQL/PostgreSQL) |
-| **AWS Lambda** | 1 Juta Request per bulan |
-| **Amazon DynamoDB** | 25 GB Storage |
+---
+
+## 💡 Memahami Free Tier
+
+AWS Free Tier terdiri dari 3 jenis:
+
+| Jenis | Keterangan | Contoh |
+|-------|-----------|--------|
+| **Always Free** | Gratis selamanya (selama tidak melebihi batas) | Lambda 1 juta request/bulan |
+| **12 Months Free** | Gratis selama 1 tahun sejak pendaftaran | EC2 750 jam/bulan |
+| **Trials** | Uji coba jangka pendek (1-2 bulan) | SageMaker 2 bulan |
+
+### Layanan Utama Free Tier
+
+| Layanan | Kuota Free Tier |
+|---------|-----------------|
+| EC2 | 750 jam/bulan (t2.micro atau t3.micro) |
+| S3 | 5 GB Storage |
+| RDS | 750 jam/bulan (MySQL/PostgreSQL) |
+| Lambda | 1 juta request/bulan |
+| DynamoDB | 25 GB Storage |
 
 ---
 
 ## ⚠️ Tips Menghindari Tagihan Tak Terduga
 
-Setelah akun aktif, sangat disarankan untuk melakukan hal berikut:
+1. **Set Up Billing Alarms**
+   - Gunakan CloudWatch atau AWS Budgets
+   - Set alert saat biaya mendekati $1
 
-1. **Set Up Billing Alarms**: Gunakan **CloudWatch** atau **AWS Budgets** untuk mengirim email jika penggunaan Anda mendekati batas gratis atau jika biaya mencapai $1.
-2. **Gunakan Region yang Tepat**: Beberapa region mungkin memiliki harga berbeda, namun Free Tier umumnya berlaku global.
-3. **Hapus Resource yang Tidak Dipakai**: Jika selesai bereksperimen, segera *Terminate* instance EC2 atau hapus S3 Bucket yang tidak diperlukan.
-4. **Cek Dasbor Free Tier**: Pantau penggunaan Anda di menu **Billing & Cost Management** -> **Free Tier**.
+2. **Hapus Resource Tidak Dipakai**
+   - Terminate EC2 instance setelah selesai praktikum
+   - Hapus S3 bucket yang tidak diperlukan
+
+3. **Cek Free Tier Dashboard**
+   - Menu: **Billing & Cost Management** → **Free Tier**
+   - Pantau penggunaan secara berkala
+
+4. **Gunakan Region yang Tepat**
+   - Beberapa region punya harga berbeda
+   - Free Tier berlaku global
+
+---
+
+## 📝 Checklist Hasil Praktikum
+
+- [ ] Akun AWS berhasil dibuat
+- [ ] Support Plan = Basic (Free)
+- [ ] Email konfirmasi diterima
+- [ ] Paham batas Free Tier untuk EC2, S3, RDS
+- [ ] Tahu cara monitoring biaya di Billing Dashboard
 
 ---
 
 ## 🏁 Langkah Selanjutnya
-Selamat! Akun Anda sudah siap.
-**Langkah pertama yang disarankan:** Aktifkan **MFA (Multi-Factor Authentication)** pada akun Root Anda untuk keamanan maksimal sebelum mulai membuat *resource* apa pun.
 
+Setelah akun aktif:
+
+1. **Aktifkan MFA (Multi-Factor Authentication)** untuk keamanan akun Root
+2. Lanjut ke praktikum berikutnya: **Membuat EC2 Instance**
+
+---
+
+## ❓ FAQ
+
+**Q: Apakah kartu debit bisa untuk daftar AWS?**  
+A: Ya, asalkan ada logo Visa/Mastercard dan mendukung transaksi internasional.
+
+**Q: Berapa lama proses aktivasi akun?**  
+A: Biasanya beberapa menit, tapi bisa sampai 24 jam dalam beberapa kasus.
+
+**Q: Apa yang terjadi jika melebihi kuota Free Tier?**  
+A: Kamu akan dikenakan biaya sesuai harga on-demand. Makanya penting set billing alert!
+
+**Q: Apakah Free Tier otomatis aktif?**  
+A: Ya, begitu akun dibuat, Free Tier langsung aktif selama 12 bulan.
+
+---
+
+*Dokumentasi praktikum Administrasi Server Semester 6*

@@ -17,9 +17,10 @@ Repository ini berisi **materi kuliah, panduan praktikum, dan dokumentasi tugas*
 | **Administrasi Server** | [`adm-server/`](adm-server/README.md) | ✅ Praktikum Lengkap |
 | **Computer Vision** | [`com-vis/`](com-vis/README.md) | ✅ Praktikum Lengkap |
 | **Deep Learning** | [`deep-learn/`](deep-learn/README.md) | 📁 Materi Dasar |
-| **Natural Language Processing** | [`NLP/`](NLP/README.md) | 📁 Materi & Tugas |
+| **Natural Language Processing** | [`NLP/`](NLP/README.md) | ✅ Praktikum Lengkap |
 | **Metodologi Penelitian** | [`metopen/`](metopen/README.md) | 📁 Materi & Tugas |
 | **Cyber Security** | [`cyber-sec/`](cyber-sec/README.md) | 📁 Tugas |
+| **Rekayasa Perangkat Lunak** | [`ppl/`](ppl/README.md) | 📁 Dokumentasi |
 
 ---
 
@@ -54,6 +55,7 @@ pip install -r requirements.txt
 - Meet 1: Pengantar CV & Matematika Deep Learning
 - Meet 3: Transformasi Citra
 - Meet 4: Object Detection
+- **Mandiri:** Face Detection Project (`praktikum.ipynb`)
 
 📖 **Lengkapnya:** [`com-vis/README.md`](com-vis/README.md)
 
@@ -75,8 +77,12 @@ jupyter notebook meet\ 1/tugas1-Abdul_Kharis-238801004.ipynb
 ```bash
 cd NLP
 pip install nltk spacy pandas numpy
-jupyter notebook turi3cv.ipynb
 ```
+
+**Praktikum:**
+- LK 1: Pengantar NLP & Text Preprocessing
+- TURI 3: CV & NLP Integration
+- **Mandiri:** NLP Pipeline Project (`nlp mandiri/abdulkharis.ipynb`)
 
 📖 **Lengkapnya:** [`NLP/README.md`](NLP/README.md)
 
@@ -98,6 +104,14 @@ Tugas-tugas keamanan siber (jaringan & kriptografi).
 
 ---
 
+### Rekayasa Perangkat Lunak (RPL/PPL)
+
+Dokumentasi analisis dan desain sistem perangkat lunak.
+
+📖 **Lengkapnya:** [`ppl/README.md`](ppl/README.md)
+
+---
+
 ## 📊 Repository Structure
 
 ```
@@ -112,7 +126,9 @@ quarter-6/
 │   ├── README.md
 │   ├── meet1/           # Pengantar CV
 │   ├── meet3/           # Image Processing
-│   └── meet4/           # Object Detection
+│   ├── meet4/           # Object Detection
+│   ├── praktikum.ipynb  # Face Detection
+│   └── flowchart_*.md   # Flowchart documentation
 │
 ├── deep-learn/          # Deep Learning
 │   ├── README.md
@@ -120,6 +136,7 @@ quarter-6/
 │
 ├── NLP/                 # Natural Language Processing
 │   ├── README.md
+│   ├── nlp mandiri/     # Mandiri project
 │   ├── LK1_*.pdf        # Lembar Kerja 1
 │   └── turi3cv.ipynb
 │
@@ -133,6 +150,10 @@ quarter-6/
 │   ├── README.md
 │   ├── Tugas4_*.pdf
 │   └── Tugas5_*.pdf
+│
+├── ppl/                 # Rekayasa Perangkat Lunak
+│   ├── README.md
+│   └── bimbingan 1/     # Bimbingan pertama
 │
 ├── LICENSE
 └── README.md
@@ -152,14 +173,15 @@ quarter-6/
 ### Libraries & Frameworks
 | Domain | Libraries |
 |--------|-----------|
-| Computer Vision | OpenCV, NumPy, Matplotlib |
+| Computer Vision | OpenCV, NumPy, Matplotlib, TensorFlow |
 | Deep Learning | TensorFlow, PyTorch, Keras |
-| NLP | NLTK, spaCy, Transformers |
+| NLP | NLTK, spaCy, Transformers, scikit-learn |
 | General | Pandas, Scikit-learn, Jupyter |
 
 ### Other
 - **Jupyter Notebook** - Interactive coding
 - **Git & GitHub** - Version control
+- **Mermaid** - Flowchart documentation
 
 ---
 

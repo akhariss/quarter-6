@@ -1,0 +1,4 @@
+teks,expected,pred
+game ini sangat seru dan bagus sekali,positif,positif
+game ini sangat jelek dan penuh iklan,negatif,negatif
+"biasa saja, tidak terlalu bagus tidak terlalu jelek",netral,negatif

@@ -14,14 +14,23 @@ Mata kuliah ini membahas konsep dasar dan implementasi Computer Vision menggunak
 
 ```
 com-vis/
-├── meet1/              # Pengantar CV & Matematika Deep Learning
-│   ├── praktikum1.py   # Script Python pertama
-│   └── cctv.jpg        # Asset gambar
-├── meet2/              # Image Processing Dasar
-├── meet3/              # Transformasi Citra
-├── meet4/              # Object Detection
-├── 2388010004_Pertemuan3.ipynb  # Notebook praktikum
-├── requirements.txt    # Dependencies Python
+├── meet1/                      # Pengantar CV & Matematika Deep Learning
+│   ├── praktikum1.py
+│   ├── cctv.jpg
+│   └── 2388010004_LKM_TURI_1.*
+├── meet3/                      # Transformasi Citra
+│   └── 2388010004_LKM_TURI_2.*
+├── meet4/                      # Object Detection
+│   └── 2388010004_LKM_TURI_3.*
+├── nlp mandiri/                # NLP Mandiri folder
+├── 2388010004_Pertemuan3.ipynb
+├── praktikum.ipynb             # Face Detection Practicum
+├── praktikum_face_detection.ipynb
+├── praktikumkel.ipynb          # Kelompok Practicum
+├── lembar_kerja_mandiri_4.md   # LKM 4 Documentation
+├── flowchart_*.md              # Various flowchart documentation
+├── alur_proses_praktikum*.md   # Practicum flow documentation
+├── requirements.txt
 └── how-to-instal-req.txt
 ```
 
@@ -34,6 +43,8 @@ com-vis/
 | Meet 1 | Pengantar CV & Matematika DL | `meet1/praktikum1.py` |
 | Meet 3 | Transformasi Citra | `2388010004_Pertemuan3.ipynb` |
 | Meet 4 | Object Detection (TURI 3) | `meet4/2388010004_LKM_TURI_3.pdf` |
+| Mandiri | Face Detection Project | `praktikum.ipynb` |
+| Mandiri | LKM 4 Documentation | `lembar_kerja_mandiri_4.md` |
 
 ---
 
@@ -64,6 +75,7 @@ pip install -r requirements.txt
 - `numpy` - Operasi array dan matriks
 - `matplotlib` - Visualisasi citra
 - `jupyter` - Jupyter Notebook
+- `tensorflow` - Deep learning untuk face detection
 
 ---
 
@@ -78,6 +90,16 @@ python meet1/praktikum1.py
 ### Jupyter Notebook (.ipynb)
 
 ```bash
+# Face Detection Practicum
+jupyter notebook praktikum.ipynb
+
+# Face Detection Alternative
+jupyter notebook praktikum_face_detection.ipynb
+
+# Kelompok Practicum
+jupyter notebook praktikumkel.ipynb
+
+# Pertemuan 3
 jupyter notebook 2388010004_Pertemuan3.ipynb
 ```
 
@@ -90,6 +112,24 @@ jupyter notebook 2388010004_Pertemuan3.ipynb
 | LKM TURI 1 | Pengantar Computer Vision | `meet1/2388010004_LKM_TURI_1.pdf` |
 | LKM TURI 2 | Transformasi Citra | `meet3/2388010004_LKM_TURI_2.pdf` |
 | LKM TURI 3 | Object Detection | `meet4/2388010004_LKM_TURI_3.pdf` |
+| LKM 4 | Face Detection Project | `lembar_kerja_mandiri_4.md` |
+
+---
+
+## 📊 Flowchart Documentation
+
+Repository ini juga berisi dokumentasi flowchart untuk berbagai proses:
+
+| File | Deskripsi |
+|------|-----------|
+| `flowchart_face_detection_pure.md` | Flowchart murni face detection |
+| `flowchart_praktikum_informative.md` | Flowchart informatif praktikum |
+| `flowchart_praktikum_lifecycle.md` | Lifecycle praktikum |
+| `flowchart_project_full_lifecycle.md` | Full lifecycle project |
+| `flowchart_project_highlevel.md` | High-level project flow |
+| `flowchart_user_spec.md` | User specification flow |
+| `c_flowchart_final.md` | Flowchart final |
+| `alur_proses_praktikum.md` | Alur proses praktikum |
 
 ---
 
@@ -98,6 +138,7 @@ jupyter notebook 2388010004_Pertemuan3.ipynb
 - **OpenCV Documentation:** https://docs.opencv.org/
 - **PyImageSearch:** https://www.pyimagesearch.com/
 - **Mathematics for Deep Learning:** `meet1/matematika untuk deep learning.docx`
+- **TensorFlow Face Detection:** https://www.tensorflow.org/hub/tutorials/tf2_object_detection_api_tutorial
 
 ---
 

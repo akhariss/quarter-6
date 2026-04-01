@@ -39,6 +39,7 @@ cd adm-server
 2. [EC2 Instance](adm-server/meet2/create_ec2.md) - Launch server virtual
 3. [Billing Alert](adm-server/meet2/Billing-Alert.md) - Setup monitoring biaya
 4. [SSH & Web Server](adm-server/meet3/Remote-SSH&web-server.md) - Remote access & Nginx
+5. [SFTP & Web Deployment](adm-server/meet4/sftp.md) - Transfer file & deploy website
 
 📖 **Lengkapnya:** [`adm-server/README.md`](adm-server/README.md)
 
@@ -120,7 +121,8 @@ quarter-6/
 │   ├── README.md
 │   ├── meet1/           # AWS Account Setup
 │   ├── meet2/           # EC2 & Billing
-│   └── meet3/           # SSH & Web Server
+│   ├── meet3/           # SSH & Web Server
+│   └── meet4/           # SFTP & Web Deployment
 │
 ├── com-vis/             # Computer Vision
 │   ├── README.md
@@ -166,6 +168,8 @@ quarter-6/
 ### Cloud & DevOps
 - **AWS** - EC2, CloudWatch, SNS, Billing
 - **SSH/PuTTY** - Remote server access
+- **FileZilla** - SFTP/FTP file transfer
+- **Nginx** - Web server
 
 ### Programming Languages
 - **Python** - Primary language untuk CV, NLP, DL
@@ -212,7 +216,7 @@ This is a personal academic repository. If you find any errors or have suggestio
 
 <div align="center">
 
-**Last Updated:** March 2026  
+**Last Updated:** April 2026  
 **Semester:** 6 | **Academic Year:** 2025/2026
 
 ⭐ If you find this repository helpful, consider giving it a star!

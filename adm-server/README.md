@@ -14,15 +14,18 @@ Mata kuliah ini membahas administrasi server menggunakan cloud computing AWS (Am
 
 ```
 adm-server/
-├── meet1/                  # AWS Account Setup
-│   └── AWS-Account.md      # Panduan membuat akun AWS
-├── meet2/                  # EC2 Instance & Billing
-│   ├── create_ec2.md       # Launch EC2 instance
-│   ├── Billing-Alert.md    # Setup monitoring biaya
-│   └── image/              # Asset gambar dokumentasi
-└── meet3/                  # SSH & Web Server
-    ├── Remote-SSH&web-server.md  # Remote access & Nginx
-    └── image/              # Asset gambar dokumentasi
+├── meet1/                      # AWS Account Setup
+│   └── AWS-Account.md          # Panduan membuat akun AWS
+├── meet2/                      # EC2 Instance & Billing
+│   ├── create_ec2.md           # Launch EC2 instance
+│   ├── Billing-Alert.md        # Setup monitoring biaya
+│   └── image/                  # Asset gambar dokumentasi
+├── meet3/                      # SSH & Web Server
+│   ├── Remote-SSH&web-server.md  # Remote access & Nginx
+│   └── image/                  # Asset gambar dokumentasi
+└── meet4/                      # SFTP & Web Deployment
+    ├── sftp.md                 # Migrasi data dengan FileZilla
+    └── image/                  # Asset gambar dokumentasi
 ```
 
 ---
@@ -35,6 +38,7 @@ adm-server/
 | Meet 2 | EC2 Instance Creation | `meet2/create_ec2.md` |
 | Meet 2 | Billing Alert Setup | `meet2/Billing-Alert.md` |
 | Meet 3 | Remote SSH & Web Server | `meet3/Remote-SSH&web-server.md` |
+| Meet 4 | SFTP & Web Deployment | `meet4/sftp.md` |
 
 ---
 
@@ -84,6 +88,17 @@ meet3/Remote-SSH&web-server.md
 - PuTTY (Windows) atau terminal SSH (Mac/Linux)
 - File .ppk (konversi dari .pem)
 
+### 5. SFTP & Web Deployment
+
+Transfer file dan deploy website:
+```
+meet4/sftp.md
+```
+
+**Tools yang dibutuhkan:**
+- FileZilla Client
+- SSH access untuk ubah hak akses folder
+
 ---
 
 ## 🔑 Konsep Penting
@@ -102,6 +117,12 @@ Layanan monitoring AWS untuk metrics dan alarm.
 
 ### SNS (Simple Notification Service)
 Layanan untuk mengirim notifikasi (email/SMS) saat alarm trigger.
+
+### SFTP (SSH File Transfer Protocol)
+Protokol transfer file yang aman dengan enkripsi SSH.
+
+### File Permissions
+Hak akses file/folder di Linux (owner, group, others).
 
 ---
 
@@ -126,6 +147,15 @@ Layanan untuk mengirim notifikasi (email/SMS) saat alarm trigger.
 | Security Group | Firewall instance |
 | Key Pair | SSH authentication |
 
+## 🛠️ Tools Client
+
+| Tool | Fungsi |
+|------|--------|
+| PuTTY | SSH client untuk Windows |
+| FileZilla | SFTP/FTP client untuk transfer file |
+| PowerShell | Terminal untuk SSH di Windows |
+| nano/vim | Text editor di Linux terminal |
+
 ---
 
 ## 📝 Checklist Praktikum
@@ -137,6 +167,9 @@ Layanan untuk mengirim notifikasi (email/SMS) saat alarm trigger.
 - [ ] Billing Alert aktif dengan threshold $1
 - [ ] Bisa remote SSH ke instance
 - [ ] Nginx terinstall dan accessible via browser
+- [ ] FileZilla terinstall dan bisa koneksi SFTP
+- [ ] Paham cara ubah hak akses folder di Linux
+- [ ] Berhasil deploy file website ke `/var/www/html`
 
 ---
 
@@ -146,6 +179,8 @@ Layanan untuk mengirim notifikasi (email/SMS) saat alarm trigger.
 - **EC2 Documentation:** https://docs.aws.amazon.com/ec2/
 - **CloudWatch:** https://docs.aws.amazon.com/cloudwatch/
 - **AWS Pricing Calculator:** https://calculator.aws/
+- **FileZilla:** https://filezilla-project.org/
+- **Linux File Permissions:** https://www.linux.com/training-tutorials/understanding-linux-file-permissions/
 
 ---
 
@@ -157,4 +192,4 @@ Semester 6 - Informatics Engineering
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*

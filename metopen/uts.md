@@ -49,7 +49,7 @@ Kata **Research** berasal dari:
 
 - Produk / Inovasi Baru
 - Publikasi Jurnal Internasional (Scopus/WoS)
-- Kekayaan Intelektual (Paten, Hak Cita)
+- Kekayaan Intelektual (Paten, Hak Cipta)
 
 ---
 
@@ -330,6 +330,20 @@ Pengetahuan
 | **Kuantitatif** | Data numerik & statistik | Uji akurasi model ML |
 | **Mixed Methods** | Gabungan keduanya | Uji sistem + survei kepuasan |
 
+#### Berdasarkan Fungsi terhadap Teori
+
+| Jenis | Definisi | Contoh Informatika |
+|-------|----------|-------------------|
+| **Eksplanatori** | Menjelaskan sebab-akibat | Mengapa mahasiswa kesulitan e-learning |
+| **Konfirmatori** | Menguji teori/hipotesis | Uji teori TAM pada aplikasi AI |
+
+#### Berdasarkan Manfaat
+
+| Jenis | Definisi | Contoh Informatika |
+|-------|----------|-------------------|
+| **Terapan** | Menyelesaikan masalah praktis | Sistem deteksi hoaks berbasis NLP |
+| **Murni (Basic)** | Mengembangkan teori/ilmu baru | Model optimasi algoritma baru |
+
 #### Berdasarkan Sifat Penelitian
 
 | Jenis | Definisi | Contoh Informatika |
@@ -485,6 +499,36 @@ Menentukan:
 
 ---
 
+### Contoh Masalah Penelitian
+
+#### Contoh 1: Pemetaan Kesiapan Digital Mahasiswa
+
+1. Penelitian kesiapan digital masih fokus pada pembelajaran daring
+2. Kemampuan digital mahasiswa masih beragam dan tidak merata
+3. Perguruan tinggi digital membutuhkan kompetensi digital mahasiswa yang memadai
+
+#### Contoh 2: Prediksi Kelulusan Mahasiswa
+
+1. Perguruan tinggi punya data akademik besar, tapi pemanfaatannya terbatas
+2. Proses evaluasi kelulusan masih konvensional
+3. Belum tersedia metode analisis data mining untuk prediksi
+
+---
+
+### Langkah-Langkah Perumusan Masalah
+
+| # | Langkah | Keterangan |
+|---|---------|-----------|
+| 1 | **Menemukan & Mengidentifikasi Masalah** | Observasi, studi literatur, diskusi |
+| 2 | **Menilai Kelayakan Masalah** | Apakah ilmiah? Ada manfaatnya? |
+| 3 | **Mempertimbangkan Sumber Daya** | Waktu, biaya, teori yang tersedia |
+| 4 | **Memastikan Kontribusi Ilmiah** | Ada novelty? Orisinal? |
+| 5 | **Menentukan Fokus Masalah** | Spesifik, tidak terlalu luas |
+| 6 | **Merumuskan Masalah Secara Jelas** | Dalam bentuk pertanyaan penelitian |
+| 7 | **Menentukan Tujuan Masalah** | Apa yang ingin dicapai |
+
+---
+
 ### Rumusan Masalah
 
 **Pertanyaan penelitian (Research Question)** yang menjadi panduan utama.
@@ -510,6 +554,16 @@ Menentukan:
 1. Bagaimana penerapan algoritma K-Nearest Neighbor dan Naïve Bayes dalam melakukan klasifikasi untuk mendeteksi risiko penyakit stroke?
 2. Bagaimana performa algoritma K-Nearest Neighbor dan Naïve Bayes dalam mendeteksi penyakit stroke?
 3. Algoritma manakah yang memiliki performa klasifikasi terbaik dalam mendeteksi penyakit stroke?
+
+---
+
+### Struktur Umum Penelitian Informatika
+
+| # | Komponen | Keterangan |
+|---|----------|-----------|
+| 1 | **Implementasi Metode** | Menerapkan algoritma/model yang dipilih |
+| 2 | **Evaluasi Performa** | Mengukur akurasi, precision, recall, dll |
+| 3 | **Perbandingan Metode** | Jika > 1 metode, bandingkan performanya |
 
 ---
 
@@ -544,9 +598,9 @@ Menentukan:
 
 | Rumusan Masalah | Tujuan Penelitian |
 |-----------------|-------------------|
-| Bagaimana penerapan algoritma K-NN dan Naïve Bayes? | Menerapkan algoritma K-NN dan Naïve Bayes... |
-| Bagaimana performa algoritma K-NN dan Naïve Bayes? | Menganalisis performa algoritma K-NN dan Naïve Bayes... |
-| Algoritma manakah yang memiliki performa terbaik? | Menentukan algoritma yang memiliki performa klasifikasi terbaik... |
+| Bagaimana penerapan algoritma K-NN dan Naïve Bayes? | Menerapkan algoritma K-NN dan Naïve Bayes dalam mendeteksi risiko penyakit stroke |
+| Bagaimana performa algoritma K-NN dan Naïve Bayes? | Menganalisis performa algoritma K-NN dan Naïve Bayes dalam mendeteksi penyakit stroke |
+| Algoritma manakah yang memiliki performa terbaik? | Menentukan algoritma yang memiliki performa klasifikasi terbaik dalam mendeteksi penyakit stroke |
 
 ---
 
@@ -569,6 +623,18 @@ Menentukan:
 - Otomatisasi (ganti manual)
 - Pendukung Keputusan (data akurat)
 - Peningkatan Keamanan
+
+#### Contoh Manfaat Penelitian (Deteksi Stroke)
+
+**Manfaat Teoritis:**
+- Memperkaya literatur ML pada klasifikasi penyakit stroke
+- Memberikan validasi metode klasifikasi ML (K-NN, Naïve Bayes)
+- Menjadi referensi penelitian selanjutnya bidang data mining & ML kesehatan
+
+**Manfaat Praktis:**
+- Mendukung deteksi dini penyakit stroke dengan model ML
+- Menyediakan informasi performa algoritma klasifikasi sebagai pertimbangan pengembangan sistem
+- Membantu pemanfaatan data kesehatan secara optimal untuk analisis prediktif
 
 ---
 
@@ -708,6 +774,14 @@ Celah penelitian yang belum diselesaikan:
 
 > 💡 **Tips:** Jangan hanya naratif! Tabel perbandingan itu kuncinya.
 
+#### Contoh Tabel Perbandingan
+
+| Peneliti (Tahun) | Metode | Dataset | Hasil | Kelemahan | Research Gap |
+|------------------|--------|---------|-------|-----------|--------------|
+| Ahmad (2022) | Naive Bayes | 1000 review | Akurasi 78% | Tidak pakai SMOTE | Perlu balancing data |
+| Budi (2023) | SVM | 500 review | Akurasi 82% | Dataset kecil | Perlu dataset lebih besar |
+| **Penelitian Ini** | Decision Tree + SMOTE | 2000 review | - | - | Mengatasi imbalance |
+
 ---
 
 ### Landasan Teori
@@ -746,7 +820,7 @@ Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 | Kategori | Tools |
 |----------|-------|
 | **Database** | Google Scholar, IEEE Xplore, ScienceDirect, ACM Digital Library, SpringerLink |
-| **AI Tools** | Research Rabbit, Connected Papers, Elicit AI, Scite AI, Semantic Scholar |
+| **AI Tools** | Research Rabbit, Connected Papers, Elicit AI, Scite AI, Semantic Scholar, Jenni AI |
 
 ---
 
@@ -828,32 +902,52 @@ Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 
 ---
 
-### IEEE Style - Standar Informatika
+### Format Lengkap Gaya Sitasi
+
+#### APA Style (7th Edition)
+
+**In-text:** `(Penulis, Tahun)` atau `Penulis (Tahun)`
+
+**Daftar Pustaka:**
+```
+Jurnal: LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436-444. https://doi.org/10.1038/nature14539
+Buku: Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
+Website: TensorFlow. (2024). Getting started. https://www.tensorflow.org
+```
+
+#### Harvard Style (Author-Date)
+
+**In-text:** `(LeCun, Bengio and Hinton, 2015)`
+
+**Daftar Pustaka:**
+```
+Jurnal: LeCun, Y., Bengio, Y. and Hinton, G., 2015. Deep learning. Nature, 521(7553), pp.436-444.
+```
+
+#### Vancouver Style (Numbered)
+
+**In-text:** `...terbukti efektif¹` atau `...(1)`
+
+**Daftar Pustaka:**
+```
+1. LeCun Y, Bengio Y, Hinton G. Deep learning. Nature. 2015 May;521(7553):436-44.
+```
+
+#### IEEE Style - Standar Informatika
 
 **Standar wajib** untuk publikasi di venue informatika: IEEE Transactions, ACM, JUTI, IJCCS, ICACSIS.
 
-#### Format In-text IEEE
-
+**In-text:**
 ```
 ...pendekatan deep learning [1] telah digunakan [2], [3] dalam klasifikasi citra medis [1], [4]-[6]. 
 Menurut [7], sistem ini lebih efisien.
 ```
 
-#### Format Daftar Pustaka IEEE
-
-**Jurnal:**
+**Daftar Pustaka:**
 ```
-[1] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015.
-```
-
-**Conference:**
-```
-[2] A. Vaswani et al., "Attention is all you need," in Proc. NeurIPS, 2017, pp. 5998–6008.
-```
-
-**Website:**
-```
-[3] GitHub, "TensorFlow repository," [Online]. Available: https://github.com/tensorflow. [Accessed: Jan. 15, 2024].
+Jurnal: [1] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015.
+Conference: [2] A. Vaswani et al., "Attention is all you need," in Proc. NeurIPS, 2017, pp. 5998–6008.
+Website: [3] GitHub, "TensorFlow repository," [Online]. Available: https://github.com/tensorflow. [Accessed: Jan. 15, 2024].
 ```
 
 ---

@@ -22,7 +22,6 @@ com-vis/
 │   └── 2388010004_LKM_TURI_2.*
 ├── meet4/                      # Object Detection
 │   └── 2388010004_LKM_TURI_3.*
-├── nlp mandiri/                # NLP Mandiri folder
 ├── 2388010004_Pertemuan3.ipynb
 ├── praktikum.ipynb             # Face Detection Practicum
 ├── praktikum_face_detection.ipynb
@@ -150,4 +149,4 @@ Semester 6 - Informatics Engineering
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*

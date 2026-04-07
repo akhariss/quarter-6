@@ -1,28 +1,30 @@
-# LEMBAR KERJA MANDIRI 4
-## COMPUTER VISION
+# Lembar Kerja Mandiri 4 - Computer Vision
+
 **T.A. Genap 2025/2026**
 
-**Nilai** | **Paraf Dosen**
---- | ---
+---
 
-## A. Identitas
-**Topik**: Project Computer Vision - Face Detection
+## 📋 Identitas
 
-**Kelompok**: 
+| Item | Keterangan |
+|------|-----------|
+| **Topik** | Project Computer Vision - Face Detection |
+| **Kelompok** | - |
+| **NIM** | [NIM Anggota 1], [NIM Anggota 2], [NIM Anggota 3], [NIM Anggota 4], [NIM Anggota 5] |
+| **Nama** | [Nama Anggota 1], [Nama Anggota 2], [Nama Anggota 3], [Nama Anggota 4], [Nama Anggota 5] |
+| **Kelas** | - |
 
-**NIM**: [NIM Anggota 1], [NIM Anggota 2], [NIM Anggota 3], [NIM Anggota 4],  
-[NIM Anggota 5]
+---
 
-**Nama**: [Nama Anggota 1], [Nama Anggota 2], [Nama Anggota 3], [Nama Anggota 4], [Nama Anggota 5]
+## 🎯 Tujuan
 
-**Kelas**: 
-
-## B. Tujuan
 1. Mengakses dataset Face Detection
 2. Melakukan preprocessing dataset untuk project Face Detection
 3. Membuat model klasifikasi wajah
 
-## C. Alur Proses Project Face Detection
+---
+
+## 📊 Alur Proses Project Face Detection
 
 ```mermaid
 graph TB
@@ -38,14 +40,14 @@ graph TB
     style H fill:#c8e6c9
 ```
 
+---
 
-
-*(Gambar di atas merupakan diagram alur proses pembuatan project Face Detection)*
-
-## D. Instruksi Pengerjaan
+## 📝 Instruksi Pengerjaan
 
 ### Tahap 1 – Mengakses Dataset Face Detection
+
 **a. Screenshot baris sintaks untuk proses Tahap 1**
+
 ```python
 # Mount Google Drive
 from google.colab import drive
@@ -57,16 +59,24 @@ print('Dataset accessed at:', dataset_path)
 ```
 
 **b. Penjelasan setiap baris yang dilakukan di Tahap 1**
-- **Baris 1**: Mengimport modul `drive` dari `google.colab` untuk mengakses Google Drive.
-- **Baris 2**: Memanggil fungsi `mount()` untuk mount Google Drive ke direktori `/content/drive`.
-- **Baris 3**: Menentukan path dataset yang sudah di-crop (hanya wajah) dan di-resize.
-- **Baris 4**: Mencetak konfirmasi bahwa dataset berhasil diakses.
 
-**c. Screenshot hasil dari Tahap 1**  
+| Baris | Penjelasan |
+|-------|-----------|
+| 1 | Mengimport modul `drive` dari `google.colab` untuk mengakses Google Drive |
+| 2 | Memanggil fungsi `mount()` untuk mount Google Drive ke direktori `/content/drive` |
+| 3 | Menentukan path dataset yang sudah di-crop (hanya wajah) dan di-resize |
+| 4 | Mencetak konfirmasi bahwa dataset berhasil diakses |
+
+**c. Screenshot hasil dari Tahap 1**
+
 *(Tempatkan screenshot output: Dataset accessed at: /content/drive/MyDrive/Dataset_Face_Only)*
 
+---
+
 ### Tahap 2 – Preprocessing Dataset
+
 **a. Screenshot baris sintaks untuk proses Tahap 2**
+
 ```python
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -104,17 +114,25 @@ print('Preprocessing selesai. Jumlah kelas:', train_generator.num_classes)
 ```
 
 **b. Penjelasan setiap baris yang dilakukan di Tahap 2**
-- **Baris 1-4**: Import library yang diperlukan untuk preprocessing.
-- **Baris 6-14**: Membuat `ImageDataGenerator` untuk normalisasi (rescale), augmentasi data (rotasi, shift, flip), dan split 80/20.
-- **Baris 16-22**: Load data training dari direktori dataset.
-- **Baris 24-30**: Load data validation.
-- **Baris 32**: Cetak konfirmasi preprocessing selesai beserta jumlah kelas.
 
-**c. Screenshot hasil dari Tahap 2**  
+| Baris | Penjelasan |
+|-------|-----------|
+| 1-4 | Import library yang diperlukan untuk preprocessing |
+| 6-14 | Membuat `ImageDataGenerator` untuk normalisasi (rescale), augmentasi data (rotasi, shift, flip), dan split 80/20 |
+| 16-22 | Load data training dari direktori dataset |
+| 24-30 | Load data validation |
+| 32 | Cetak konfirmasi preprocessing selesai beserta jumlah kelas |
+
+**c. Screenshot hasil dari Tahap 2**
+
 *(Tempatkan screenshot output: Found XXX images belonging to Y classes, Preprocessing selesai. Jumlah kelas: Y)*
 
+---
+
 ### Tahap 3 – Membuat Model Klasifikasi Wajah
+
 **a. Screenshot baris sintaks untuk proses Tahap 3**
+
 ```python
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
@@ -141,16 +159,24 @@ model.summary()
 ```
 
 **b. Penjelasan setiap baris yang dilakukan di Tahap 3**
-- **Baris 1-2**: Import komponen layer untuk Sequential model.
-- **Baris 4-15**: Stack layer CNN: 3 blok Conv2D + MaxPooling, Flatten, Dense, Dropout, output softmax.
-- **Baris 17-20**: Compile model dengan optimizer Adam, loss categorical_crossentropy, metrik accuracy.
-- **Baris 22**: Tampilkan arsitektur model.
 
-**c. Screenshot hasil dari Tahap 3**  
+| Baris | Penjelasan |
+|-------|-----------|
+| 1-2 | Import komponen layer untuk Sequential model |
+| 4-15 | Stack layer CNN: 3 blok Conv2D + MaxPooling, Flatten, Dense, Dropout, output softmax |
+| 17-20 | Compile model dengan optimizer Adam, loss categorical_crossentropy, metrik accuracy |
+| 22 | Tampilkan arsitektur model |
+
+**c. Screenshot hasil dari Tahap 3**
+
 *(Tempatkan screenshot model.summary())*
 
+---
+
 ### Tahap 4 – Training Model
+
 **a. Screenshot baris sintaks untuk proses Tahap 4**
+
 ```python
 # Training model
 history = model.fit(
@@ -165,15 +191,23 @@ print('Model berhasil dibuat dan disimpan!')
 ```
 
 **b. Penjelasan setiap baris yang dilakukan di Tahap 4**
-- **Baris 2-6**: Training model selama 20 epoch menggunakan data train dan validasi.
-- **Baris 9**: Simpan model yang sudah dilatih ke Google Drive.
-- **Baris 10**: Konfirmasi model berhasil disimpan.
 
-**c. Screenshot hasil dari Tahap 4**  
+| Baris | Penjelasan |
+|-------|-----------|
+| 2-6 | Training model selama 20 epoch menggunakan data train dan validasi |
+| 9 | Simpan model yang sudah dilatih ke Google Drive |
+| 10 | Konfirmasi model berhasil disimpan |
+
+**c. Screenshot hasil dari Tahap 4**
+
 *(Tempatkan screenshot training history: loss/accuracy per epoch)*
 
+---
+
 ### Tahap 5 – Visualisasi Hasil Training
+
 **a. Screenshot baris sintaks untuk proses Tahap 5**
+
 ```python
 # Plot hasil training
 import matplotlib.pyplot as plt
@@ -185,14 +219,30 @@ plt.show()
 ```
 
 **b. Penjelasan setiap baris yang dilakukan di Tahap 5**
-- **Baris 2**: Import matplotlib untuk plotting.
-- **Baris 4-6**: Plot kurva accuracy training vs validation.
-- **Baris 7**: Tampilkan plot.
 
-**c. Screenshot hasil dari Tahap 5**  
+| Baris | Penjelasan |
+|-------|-----------|
+| 2 | Import matplotlib untuk plotting |
+| 4-6 | Plot kurva accuracy training vs validation |
+| 7 | Tampilkan plot |
+
+**c. Screenshot hasil dari Tahap 5**
+
 *(Tempatkan screenshot plot accuracy curves)*
 
 ---
 
-*Lembar Kerja Mandiri: Computer Vision*
+## 📊 Penilaian
 
+| Kriteria | Skor Maksimal | Skor Diperoleh |
+|----------|---------------|----------------|
+| Tahap 1: Mengakses Dataset | 20 | |
+| Tahap 2: Preprocessing | 20 | |
+| Tahap 3: Membuat Model | 20 | |
+| Tahap 4: Training | 20 | |
+| Tahap 5: Visualisasi | 20 | |
+| **Total** | **100** | |
+
+---
+
+*Lembar Kerja Mandiri - Computer Vision Semester 6*

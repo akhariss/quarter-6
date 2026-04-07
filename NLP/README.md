@@ -17,9 +17,13 @@ NLP/
 ├── nlp mandiri/                # NLP Mandiri Practicum
 │   ├── abdulkharis.ipynb       # Main notebook
 │   ├── data_mentah_dan_proses/ # Raw and processed data
-│   └── gambar_laporan/         # Report images
-├── LK1_Abdulkharis_2388010004_NLP.docx  # Lembar Kerja 1
-├── LK1_Abdulkharis_2388010004_NLP.pdf   # Versi PDF
+│   │   ├── ulasan_mentah.csv   # Raw dataset
+│   │   ├── ulasan_bersih.csv   # Cleaned dataset
+│   │   ├── hasil_prediksi.csv  # Prediction results
+│   │   └── *.pkl               # Trained models
+│   └── gambar_laporan/         # Report images (plots, charts)
+├── LK1_Abdulkharis_2388010004_NLP.*  # Lembar Kerja 1
+├── Laporan_NLP_Abdul_Kharis_2388010004.*  # Final Report
 └── turi3cv.ipynb                        # Notebook praktikum
 ```
 
@@ -75,9 +79,15 @@ jupyter notebook turi3cv.ipynb
 ## 📊 Dataset
 
 Folder `nlp mandiri/data_mentah_dan_proses/` berisi:
-- Data mentah (raw data)
-- Data yang sudah diproses
-- Dataset untuk training dan testing
+
+| File | Deskripsi |
+|------|-----------|
+| `ulasan_mentah.csv` | Data mentah (raw reviews) |
+| `ulasan_bersih.csv` | Data yang sudah diproses |
+| `hasil_prediksi.csv` | Hasil prediksi model |
+| `error_analysis_50_sampel.csv` | Error analysis |
+| `best_params.csv` | Best hyperparameters |
+| `*.pkl` | Trained models (pickle) |
 
 ---
 
@@ -87,6 +97,7 @@ Folder `nlp mandiri/data_mentah_dan_proses/` berisi:
 - **spaCy Documentation:** https://spacy.io/
 - **Hugging Face:** https://huggingface.co/
 - **NLP with Python:** https://www.nltk.org/book/
+- **Scikit-learn Text Processing:** https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_extraction.text
 
 ---
 
@@ -98,4 +109,4 @@ Semester 6 - Informatics Engineering
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*

@@ -14,8 +14,8 @@ Mata kuliah ini membahas metode penelitian ilmiah dalam bidang informatika. Foku
 
 ```
 metopen/
-├── materi 1.pdf              # Materi pertemuan 1
-├── materi 2.pdf              # Materi pertemuan 2
+├── materi 1.pdf                        # Materi pertemuan 1
+├── materi 2.pdf                        # Materi pertemuan 2
 ├── Tugas2_AbdulKharis_2388010004.docx  # Tugas 2
 └── Tugas2_AbdulKharis_2388010004.pdf   # Versi PDF
 ```
@@ -68,4 +68,4 @@ Semester 6 - Informatics Engineering
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*

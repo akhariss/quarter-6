@@ -15,8 +15,8 @@ Mata kuliah ini membahas konsep dan implementasi Deep Learning menggunakan neura
 ```
 deep-learn/
 └── meet 1/
-    ├── meet1.docx              # Materi pengantar
-    └── tugas1-Abdul_Kharis-238801004.ipynb  # Tugas pertama
+    ├── meet1.docx                          # Materi pengantar
+    └── tugas1-Abdul_Kharis-238801004.ipynb # Tugas pertama
 ```
 
 ---
@@ -73,4 +73,4 @@ Semester 6 - Informatics Engineering
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*

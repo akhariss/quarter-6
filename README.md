@@ -41,6 +41,7 @@ cd adm-server
 3. [Billing Alert](adm-server/meet2/Billing-Alert.md) - Setup monitoring biaya
 4. [SSH & Web Server](adm-server/meet3/Remote-SSH&web-server.md) - Remote access & Nginx
 5. [SFTP & Web Deployment](adm-server/meet4/sftp.md) - Transfer file & deploy website
+6. [Database Server (MariaDB)](adm-server/meet5/mariadb.md) - Instalasi & konfigurasi database
 
 📖 **Lengkapnya:** [`adm-server/README.md`](adm-server/README.md)
 
@@ -131,7 +132,8 @@ quarter-6/
 │   ├── meet1/           # AWS Account Setup
 │   ├── meet2/           # EC2 & Billing
 │   ├── meet3/           # SSH & Web Server
-│   └── meet4/           # SFTP & Web Deployment
+│   ├── meet4/           # SFTP & Web Deployment
+│   └── meet5/           # Database Server (MariaDB)
 │
 ├── com-vis/             # Computer Vision
 │   ├── README.md

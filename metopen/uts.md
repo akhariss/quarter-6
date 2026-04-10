@@ -8,14 +8,14 @@
 
 1. [Pengantar Penelitian](#1-pengantar-penelitian)
 2. [Berpikir Logis](#2-berpikir-logis)
-3. [Ilmu & Pengetahuan](#3-ilmu--pengetahuan)
+3. [Ilmu &amp; Pengetahuan](#3-ilmu--pengetahuan)
 4. [Metodologi Penelitian](#4-metodologi-penelitian)
-5. [Paradigma & Pendekatan](#5-paradigma--pendekatan-penelitian)
-6. [Kontribusi & Orisinalitas](#6-kontribusi--orisinalitas)
-7. [Identifikasi & Perumusan Masalah](#7-identifikasi--perumusan-masalah)
+5. [Paradigma &amp; Pendekatan](#5-paradigma--pendekatan-penelitian)
+6. [Kontribusi &amp; Orisinalitas](#6-kontribusi--orisinalitas)
+7. [Identifikasi &amp; Perumusan Masalah](#7-identifikasi--perumusan-masalah)
 8. [Hipotesis](#8-hipotesis)
 9. [Literature Review](#9-literature-review)
-10. [Sitasi & Referensi](#10-sitasi--referensi)
+10. [Sitasi &amp; Referensi](#10-sitasi--referensi)
 
 ---
 
@@ -24,6 +24,7 @@
 ### Apa itu Penelitian?
 
 Kata **Research** berasal dari:
+
 - **Re** = kembali
 - **To Search** = mencari
 - **Research** = mencari kembali
@@ -38,12 +39,12 @@ Kata **Research** berasal dari:
 
 ### Faktor Perkembangan Ilmu
 
-| Faktor | Keterangan |
-|--------|-----------|
-| Kepentingan / Kebutuhan | Kebutuhan akan teori baru |
+| Faktor                     | Keterangan                          |
+| -------------------------- | ----------------------------------- |
+| Kepentingan / Kebutuhan    | Kebutuhan akan teori baru           |
 | Teori Lama sebagai Pijakan | Landasan dari penelitian sebelumnya |
-| Pengaruh Antar Bidang Ilmu | Kolaborasi lintas disiplin |
-| Metodologi yang Digunakan | Pendekatan yang tepat |
+| Pengaruh Antar Bidang Ilmu | Kolaborasi lintas disiplin          |
+| Metodologi yang Digunakan  | Pendekatan yang tepat               |
 
 ### Riset Terbaik Menghasilkan
 
@@ -88,11 +89,11 @@ Teori Umum
 
 #### Contoh
 
-| Premis | Isi |
-|--------|-----|
-| Premis 1 (Umum) | Semua manusia yang hidup di dunia pasti akan mati |
-| Premis 2 (Khusus) | Sokrates adalah manusia |
-| **Konklusi** | **∴ Sokrates pasti akan mati** |
+| Premis             | Isi                                               |
+| ------------------ | ------------------------------------------------- |
+| Premis 1 (Umum)    | Semua manusia yang hidup di dunia pasti akan mati |
+| Premis 2 (Khusus)  | Sokrates adalah manusia                           |
+| **Konklusi** | **∴ Sokrates pasti akan mati**             |
 
 #### Ciri Logika Deduktif
 
@@ -103,9 +104,9 @@ Teori Umum
 
 #### Contoh Valid vs Tidak Valid
 
-| Status | Premis 1 | Premis 2 | Konklusi |
-|--------|----------|----------|----------|
-| ✅ Valid | Semua ikan bisa berenang | Nemo adalah ikan | Nemo bisa berenang |
+| Status         | Premis 1                  | Premis 2              | Konklusi             |
+| -------------- | ------------------------- | --------------------- | -------------------- |
+| ✅ Valid       | Semua ikan bisa berenang  | Nemo adalah ikan      | Nemo bisa berenang   |
 | ❌ Tidak Valid | Semua burung bisa terbang | Pinguin adalah burung | Pinguin bisa terbang |
 
 > ⚠️ **Hati-hati:** Premis yang benar belum tentu menghasilkan kesimpulan yang valid jika hubungannya tidak tepat!
@@ -127,16 +128,16 @@ Observasi Kasus Khusus
 
 #### Tipe Argumen Induktif
 
-| Tipe | Keterangan |
-|------|-----------|
+| Tipe             | Keterangan                         |
+| ---------------- | ---------------------------------- |
 | **Strong** | Premis bukti kuat untuk kesimpulan |
-| **Weak** | Premis bukti lemah |
-| **Good** | Strong + Premis benar |
+| **Weak**   | Premis bukti lemah                 |
+| **Good**   | Strong + Premis benar              |
 
 #### Contoh
 
-| Observasi | Matahari terbit dari Timur setiap hari |
-|-----------|----------------------------------------|
+| Observasi                     | Matahari terbit dari Timur setiap hari              |
+| ----------------------------- | --------------------------------------------------- |
 | **Kesimpulan Induktif** | **∴ Matahari selalu terbit dari arah Timur** |
 
 #### Ciri Penalaran Induktif
@@ -174,11 +175,11 @@ Observasi Kasus Khusus
 
 ### Ringkasan: Deduktif vs Induktif
 
-| Aspek | Deduktif | Induktif |
-|-------|----------|----------|
-| **Arah** | Umum → Khusus | Khusus → Umum |
-| **Sifat** | Analitis | Sintetis |
-| **Dasar** | Apriori | A Posteriori (empiris) |
+| Aspek               | Deduktif             | Induktif                     |
+| ------------------- | -------------------- | ---------------------------- |
+| **Arah**      | Umum → Khusus       | Khusus → Umum               |
+| **Sifat**     | Analitis             | Sintetis                     |
+| **Dasar**     | Apriori              | A Posteriori (empiris)       |
 | **Kepastian** | Mutlak (valid/tidak) | Probabilistik (tidak mutlak) |
 
 ---
@@ -192,6 +193,7 @@ Observasi Kasus Khusus
 > ⚠️ **Ingat:** Tidak semua pengetahuan adalah ilmu!
 
 **Ilmu:** Pengetahuan yang:
+
 - ✅ Sistematis
 - ✅ Teruji
 - ✅ Dapat direplikasi
@@ -199,12 +201,12 @@ Observasi Kasus Khusus
 
 ### Ciri-ciri Ilmu Pengetahuan
 
-| Ciri | Keterangan |
-|------|-----------|
-| Objektif | Tidak dipengaruhi subjektivitas |
-| Sistematis | Terstruktur dan terorganisir |
-| Metodis | Menggunakan metode tertentu |
-| Universal | Berlaku umum |
+| Ciri       | Keterangan                      |
+| ---------- | ------------------------------- |
+| Objektif   | Tidak dipengaruhi subjektivitas |
+| Sistematis | Terstruktur dan terorganisir    |
+| Metodis    | Menggunakan metode tertentu     |
+| Universal  | Berlaku umum                    |
 
 ### Hubungan Ilmu, Pengetahuan, dan Penelitian
 
@@ -231,26 +233,27 @@ Pengetahuan
 **Metodologi Penelitian:** Kerangka berpikir ilmiah yang menjelaskan **MENGAPA** dan **BAGAIMANA** penelitian dilakukan.
 
 > 💡 **Analogi:**
+>
 > - **Metodologi** = Peta (menunjukkan alasan dan arah besar)
 > - **Metode** = Jalan-jalan kecil yang kita pilih di peta
 
 ### Komponen Metodologi (Creswell)
 
-| Komponen | Keterangan |
-|----------|-----------|
-| **Worldview (Filosofi)** | Cara pandang terhadap realitas |
-| **Strategy of Inquiry (Desain Penelitian)** | Desain penelitian |
-| **Metode (Prosedur Teknis)** | Prosedur teknis konkret |
+| Komponen                                          | Keterangan                     |
+| ------------------------------------------------- | ------------------------------ |
+| **Worldview (Filosofi)**                    | Cara pandang terhadap realitas |
+| **Strategy of Inquiry (Desain Penelitian)** | Desain penelitian              |
+| **Metode (Prosedur Teknis)**                | Prosedur teknis konkret        |
 
 ---
 
 ### Worldview (Filosofi)
 
-| Worldview | Kebenaran dari | Realitas | Metode | Contoh |
-|-----------|---------------|----------|--------|--------|
-| **Positivisme** | Angka & bukti | Objektif & terukur | Data kuantitatif & statistik | Uji akurasi model AI |
-| **Interpretivisme** | Pengalaman manusia | Dipengaruhi konteks & makna | Wawancara / observasi | Studi pengalaman pengguna (UX) |
-| **Pragmatisme** | Keberhasilan solusi | Fleksibel | Gabung metode | Sistem deteksi hoaks |
+| Worldview                 | Kebenaran dari      | Realitas                    | Metode                       | Contoh                         |
+| ------------------------- | ------------------- | --------------------------- | ---------------------------- | ------------------------------ |
+| **Positivisme**     | Angka & bukti       | Objektif & terukur          | Data kuantitatif & statistik | Uji akurasi model AI           |
+| **Interpretivisme** | Pengalaman manusia  | Dipengaruhi konteks & makna | Wawancara / observasi        | Studi pengalaman pengguna (UX) |
+| **Pragmatisme**     | Keberhasilan solusi | Fleksibel                   | Gabung metode                | Sistem deteksi hoaks           |
 
 ---
 
@@ -281,11 +284,11 @@ Pengetahuan
 
 ### Ciri Penelitian Informatika Modern
 
-| Ciri | Keterangan |
-|------|-----------|
+| Ciri                       | Keterangan                                               |
+| -------------------------- | -------------------------------------------------------- |
 | **Berbasis Artefak** | Menciptakan sesuatu (algoritma, sistem, model, aplikasi) |
-| **Eksperimental** | Uji akurasi, performa, waktu eksekusi |
-| **Iteratif** | Buat → Uji → Perbaiki → Uji lagi |
+| **Eksperimental**    | Uji akurasi, performa, waktu eksekusi                    |
+| **Iteratif**         | Buat → Uji → Perbaiki → Uji lagi                      |
 
 ---
 
@@ -293,22 +296,22 @@ Pengetahuan
 
 ### Pendekatan Penelitian
 
-| Pendekatan | Asal | Sifat | Observasi | Generalisasi | Alur |
-|------------|------|-------|-----------|--------------|------|
-| **Kualitatif** | Ilmu sosial | Subjektif | Tanpa kontrol | Tidak ada | Induktif |
-| **Kuantitatif** | Ilmu alam | Objektif | Terkontrol | Ada | Deduktif-Induktif |
-| **Mixed Method** | Gabungan | Terintegrasi | Keduanya | Ada | Keduanya |
+| Pendekatan             | Asal        | Sifat        | Observasi     | Generalisasi | Alur              |
+| ---------------------- | ----------- | ------------ | ------------- | ------------ | ----------------- |
+| **Kualitatif**   | Ilmu sosial | Subjektif    | Tanpa kontrol | Tidak ada    | Induktif          |
+| **Kuantitatif**  | Ilmu alam   | Objektif     | Terkontrol    | Ada          | Deduktif-Induktif |
+| **Mixed Method** | Gabungan    | Terintegrasi | Keduanya      | Ada          | Keduanya          |
 
 ---
 
 ### Metode Penelitian
 
-| Metode | Keterangan | Contoh |
-|--------|-----------|--------|
-| **Penelitian Tindakan** | Monitoring & pencatatan penerapan, memecahkan masalah | PTK di pendidikan |
-| **Eksperimen** | Investigasi sebab-akibat, ujicoba terkontrol | Sains & teknik |
-| **Studi Kasus** | Eksplorasi satu situasi secara mendalam | Sosial, ekonomi, politik |
-| **Survei** | Pengumpulan data dari populasi | Kuesioner & wawancara |
+| Metode                        | Keterangan                                            | Contoh                   |
+| ----------------------------- | ----------------------------------------------------- | ------------------------ |
+| **Penelitian Tindakan** | Monitoring & pencatatan penerapan, memecahkan masalah | PTK di pendidikan        |
+| **Eksperimen**          | Investigasi sebab-akibat, ujicoba terkontrol          | Sains & teknik           |
+| **Studi Kasus**         | Eksplorasi satu situasi secara mendalam               | Sosial, ekonomi, politik |
+| **Survei**              | Pengumpulan data dari populasi                        | Kuesioner & wawancara    |
 
 ---
 
@@ -316,40 +319,40 @@ Pengetahuan
 
 #### Berdasarkan Tujuan
 
-| Jenis | Definisi | Contoh Informatika |
-|-------|----------|-------------------|
-| **Deskriptif** | Menggambarkan fenomena apa adanya | Literasi digital mahasiswa |
-| **Eksperimen** | Menguji pengaruh variabel tertentu | Pengaruh AI tutor terhadap nilai |
-| **Korelasional** | Meneliti hubungan antar variabel | Hubungan durasi LMS dan IPK |
+| Jenis                  | Definisi                           | Contoh Informatika               |
+| ---------------------- | ---------------------------------- | -------------------------------- |
+| **Deskriptif**   | Menggambarkan fenomena apa adanya  | Literasi digital mahasiswa       |
+| **Eksperimen**   | Menguji pengaruh variabel tertentu | Pengaruh AI tutor terhadap nilai |
+| **Korelasional** | Meneliti hubungan antar variabel   | Hubungan durasi LMS dan IPK      |
 
 #### Berdasarkan Pendekatan Data
 
-| Jenis | Definisi | Contoh Informatika |
-|-------|----------|-------------------|
-| **Kualitatif** | Data naratif/deskriptif | Wawancara pengalaman pengguna |
-| **Kuantitatif** | Data numerik & statistik | Uji akurasi model ML |
-| **Mixed Methods** | Gabungan keduanya | Uji sistem + survei kepuasan |
+| Jenis                   | Definisi                 | Contoh Informatika            |
+| ----------------------- | ------------------------ | ----------------------------- |
+| **Kualitatif**    | Data naratif/deskriptif  | Wawancara pengalaman pengguna |
+| **Kuantitatif**   | Data numerik & statistik | Uji akurasi model ML          |
+| **Mixed Methods** | Gabungan keduanya        | Uji sistem + survei kepuasan  |
 
 #### Berdasarkan Fungsi terhadap Teori
 
-| Jenis | Definisi | Contoh Informatika |
-|-------|----------|-------------------|
+| Jenis                  | Definisi                 | Contoh Informatika                     |
+| ---------------------- | ------------------------ | -------------------------------------- |
 | **Eksplanatori** | Menjelaskan sebab-akibat | Mengapa mahasiswa kesulitan e-learning |
-| **Konfirmatori** | Menguji teori/hipotesis | Uji teori TAM pada aplikasi AI |
+| **Konfirmatori** | Menguji teori/hipotesis  | Uji teori TAM pada aplikasi AI         |
 
 #### Berdasarkan Manfaat
 
-| Jenis | Definisi | Contoh Informatika |
-|-------|----------|-------------------|
-| **Terapan** | Menyelesaikan masalah praktis | Sistem deteksi hoaks berbasis NLP |
-| **Murni (Basic)** | Mengembangkan teori/ilmu baru | Model optimasi algoritma baru |
+| Jenis                   | Definisi                      | Contoh Informatika                |
+| ----------------------- | ----------------------------- | --------------------------------- |
+| **Terapan**       | Menyelesaikan masalah praktis | Sistem deteksi hoaks berbasis NLP |
+| **Murni (Basic)** | Mengembangkan teori/ilmu baru | Model optimasi algoritma baru     |
 
 #### Berdasarkan Sifat Penelitian
 
-| Jenis | Definisi | Contoh Informatika |
-|-------|----------|-------------------|
-| **Rekayasa** | Membangun/mengembangkan sistem | Rancang bangun aplikasi mobile |
-| **Non-Rekayasa** | Analisis tanpa membangun sistem | Analisis usability aplikasi |
+| Jenis                  | Definisi                        | Contoh Informatika             |
+| ---------------------- | ------------------------------- | ------------------------------ |
+| **Rekayasa**     | Membangun/mengembangkan sistem  | Rancang bangun aplikasi mobile |
+| **Non-Rekayasa** | Analisis tanpa membangun sistem | Analisis usability aplikasi    |
 
 ---
 
@@ -380,25 +383,25 @@ Pengetahuan
 
 ### Kesalahan Pemahaman Umum
 
-| ❌ Salah | ✅ Benar |
-|----------|----------|
-| Membangun software = tujuan utama penelitian | Software hanya **alat uji (testbed)**. Tujuan utama = kontribusi ke pengetahuan ilmiah |
-| Kontribusi ke masyarakat = tujuan penelitian | Masuk ke bagian **MANFAAT** penelitian |
+| ❌ Salah                                     | ✅ Benar                                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Membangun software = tujuan utama penelitian | Software hanya**alat uji (testbed)**. Tujuan utama = kontribusi ke pengetahuan ilmiah |
+| Kontribusi ke masyarakat = tujuan penelitian | Masuk ke bagian**MANFAAT** penelitian                                                 |
 
 ### Karakter Peneliti
 
-| ✅ BOLEH | ❌ TIDAK BOLEH |
-|----------|----------------|
+| ✅ BOLEH                               | ❌ TIDAK BOLEH                        |
+| -------------------------------------- | ------------------------------------- |
 | Salah (hipotesis, analisis, pengujian) | Bohong (manipulasi data, plagiarisme) |
 
 ### Level Kontribusi Penelitian
 
-| Jenjang | Level Kontribusi | Bentuk Kontribusi |
-|---------|-----------------|-------------------|
-| **Tugas Akhir (D3/D4)** | Penguasaan Teknis | Implementasi |
-| **Skripsi (S1)** | Pengujian Teori | Implementasi |
-| **Tesis (S2)** | Pengembangan Teori | Incremental |
-| **Disertasi (S3)** | Penemuan Teori Baru | Substantial & Invention |
+| Jenjang                       | Level Kontribusi    | Bentuk Kontribusi       |
+| ----------------------------- | ------------------- | ----------------------- |
+| **Tugas Akhir (D3/D4)** | Penguasaan Teknis   | Implementasi            |
+| **Skripsi (S1)**        | Pengujian Teori     | Implementasi            |
+| **Tesis (S2)**          | Pengembangan Teori  | Incremental             |
+| **Disertasi (S3)**      | Penemuan Teori Baru | Substantial & Invention |
 
 ---
 
@@ -422,6 +425,7 @@ Pengetahuan
 > Memecahkan masalah yang sudah pernah dikerjakan orang lain, tapi dengan **metode yang berbeda** (method improvement)
 
 **Contoh:**
+
 > **Judul:** Penerapan Metode XYZ untuk Pemecahan Masalah Konvergensi Prematur pada Algoritma Genetika untuk Penentuan Desain Bendungan.
 >
 > **Kontribusi:** Menerapkan Metode XYZ yang sebelumnya tidak pernah digunakan untuk memecahkan masalah konvergensi prematur pada Algoritma Genetika.
@@ -431,6 +435,7 @@ Pengetahuan
 > Memecahkan masalah yang orang lain **belum pernah kerjakan** (penemuan masalah baru)
 
 **Contoh:**
+
 > **Judul:** Penerapan Algoritma Genetika untuk Penentuan Desain Bendungan dengan Empat Parameter.
 >
 > **Kontribusi:** Penentuan Desain Bendungan dengan Empat Parameter (kebanyakan peneliti menggunakan dua parameter).
@@ -442,6 +447,7 @@ Pengetahuan
 > **Judul:** Penerapan Metode XYZ untuk Pemecahan Masalah Konvergensi Prematur pada Algoritma Genetika untuk Penentuan Desain Bendungan dengan Empat Parameter.
 >
 > **Kontribusi:**
+>
 > 1. Penerapan metode XYZ untuk memecahkan masalah konvergensi prematur
 > 2. Penentuan Desain Bendungan dengan Empat Parameter
 
@@ -455,15 +461,15 @@ Pengetahuan
 
 ### Parameter Penelitian Berkualitas
 
-| # | Parameter |
-|---|-----------|
+| # | Parameter                                           |
+| - | --------------------------------------------------- |
 | 1 | Logis, sistematis, terencana, tervalidasi & terukur |
-| 2 | Empiris, dilatarbelakangi situasi riil, data valid |
-| 3 | Memiliki kebaruan (novelty) |
-| 4 | Menghasilkan kontribusi orisinal yang tinggi |
-| 5 | Kontribusi bisa digeneralisasi |
-| 6 | Bisa direplikasi oleh peneliti lain |
-| 7 | Mendapatkan sitasi (citation) yang tinggi |
+| 2 | Empiris, dilatarbelakangi situasi riil, data valid  |
+| 3 | Memiliki kebaruan (novelty)                         |
+| 4 | Menghasilkan kontribusi orisinal yang tinggi        |
+| 5 | Kontribusi bisa digeneralisasi                      |
+| 6 | Bisa direplikasi oleh peneliti lain                 |
+| 7 | Mendapatkan sitasi (citation) yang tinggi           |
 
 ---
 
@@ -472,6 +478,7 @@ Pengetahuan
 ### Mengapa Identifikasi Masalah Penting?
 
 Menentukan:
+
 - Arah penelitian
 - Metode penelitian
 - Jenis data
@@ -489,13 +496,13 @@ Menentukan:
 
 ### Cara Mengidentifikasi Masalah
 
-| Cara | Keterangan |
-|------|-----------|
-| **Observasi Dunia Sekitar** | Melihat masalah langsung di lapangan |
-| **Studi Literatur & Jurnal** | Cari di bagian *future work*, *limitation* |
-| **Identifikasi Research Gap** | Kata kunci: "however", "not addressed" |
-| **Diskusi & Ahli** | Bimbingan dosen, diskusi dengan ahli |
-| **Keluhan di Lapangan** | Observasi eksploratif |
+| Cara                                | Keterangan                                    |
+| ----------------------------------- | --------------------------------------------- |
+| **Observasi Dunia Sekitar**   | Melihat masalah langsung di lapangan          |
+| **Studi Literatur & Jurnal**  | Cari di bagian*future work*, *limitation* |
+| **Identifikasi Research Gap** | Kata kunci: "however", "not addressed"        |
+| **Diskusi & Ahli**            | Bimbingan dosen, diskusi dengan ahli          |
+| **Keluhan di Lapangan**       | Observasi eksploratif                         |
 
 ---
 
@@ -517,15 +524,15 @@ Menentukan:
 
 ### Langkah-Langkah Perumusan Masalah
 
-| # | Langkah | Keterangan |
-|---|---------|-----------|
+| # | Langkah                                        | Keterangan                          |
+| - | ---------------------------------------------- | ----------------------------------- |
 | 1 | **Menemukan & Mengidentifikasi Masalah** | Observasi, studi literatur, diskusi |
-| 2 | **Menilai Kelayakan Masalah** | Apakah ilmiah? Ada manfaatnya? |
-| 3 | **Mempertimbangkan Sumber Daya** | Waktu, biaya, teori yang tersedia |
-| 4 | **Memastikan Kontribusi Ilmiah** | Ada novelty? Orisinal? |
-| 5 | **Menentukan Fokus Masalah** | Spesifik, tidak terlalu luas |
-| 6 | **Merumuskan Masalah Secara Jelas** | Dalam bentuk pertanyaan penelitian |
-| 7 | **Menentukan Tujuan Masalah** | Apa yang ingin dicapai |
+| 2 | **Menilai Kelayakan Masalah**            | Apakah ilmiah? Ada manfaatnya?      |
+| 3 | **Mempertimbangkan Sumber Daya**         | Waktu, biaya, teori yang tersedia   |
+| 4 | **Memastikan Kontribusi Ilmiah**         | Ada novelty? Orisinal?              |
+| 5 | **Menentukan Fokus Masalah**             | Spesifik, tidak terlalu luas        |
+| 6 | **Merumuskan Masalah Secara Jelas**      | Dalam bentuk pertanyaan penelitian  |
+| 7 | **Menentukan Tujuan Masalah**            | Apa yang ingin dicapai              |
 
 ---
 
@@ -542,10 +549,10 @@ Menentukan:
 
 #### Rumusan Masalah: Lemah vs Tajam
 
-| Jenis | ❌ Hindari (Lemah) | ✅ Gunakan (Tajam) |
-|-------|---------------------|-------------------|
-| **Aplikasi** | Bagaimana cara membuat aplikasi kasir berbasis web? | Bagaimana menerapkan metode RAD untuk meminimalkan bug pada pengembangan sistem POS? |
-| **AI/Data** | Apakah algoritma Naive Bayes bisa dipakai untuk prediksi hujan? | Berapa tingkat akurasi Naive Bayes dibandingkan C4.5 dalam memprediksi curah hujan berbasis data BMKG? |
+| Jenis              | ❌ Hindari (Lemah)                                              | ✅ Gunakan (Tajam)                                                                                     |
+| ------------------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Aplikasi** | Bagaimana cara membuat aplikasi kasir berbasis web?             | Bagaimana menerapkan metode RAD untuk meminimalkan bug pada pengembangan sistem POS?                   |
+| **AI/Data**  | Apakah algoritma Naive Bayes bisa dipakai untuk prediksi hujan? | Berapa tingkat akurasi Naive Bayes dibandingkan C4.5 dalam memprediksi curah hujan berbasis data BMKG? |
 
 ---
 
@@ -559,11 +566,11 @@ Menentukan:
 
 ### Struktur Umum Penelitian Informatika
 
-| # | Komponen | Keterangan |
-|---|----------|-----------|
-| 1 | **Implementasi Metode** | Menerapkan algoritma/model yang dipilih |
-| 2 | **Evaluasi Performa** | Mengukur akurasi, precision, recall, dll |
-| 3 | **Perbandingan Metode** | Jika > 1 metode, bandingkan performanya |
+| # | Komponen                      | Keterangan                               |
+| - | ----------------------------- | ---------------------------------------- |
+| 1 | **Implementasi Metode** | Menerapkan algoritma/model yang dipilih  |
+| 2 | **Evaluasi Performa**   | Mengukur akurasi, precision, recall, dll |
+| 3 | **Perbandingan Metode** | Jika > 1 metode, bandingkan performanya  |
 
 ---
 
@@ -573,12 +580,12 @@ Menentukan:
 
 #### Elemen yang Bisa Dibatasi
 
-| Elemen | Contoh |
-|--------|--------|
-| **Data (Dataset)** | Dataset transaksi 2020-2023, tidak mencakup data retur |
-| **Fungsionalitas (Fitur)** | Fokus Backend API & algoritma, Frontend hanya prototipe |
-| **Metode/Algoritma** | Deteksi objek pakai YOLO v5, tidak bandingkan versi sebelumnya |
-| **Lingkungan (Environment)** | Android minimal versi 10 (Q), butuh akses GPS |
+| Elemen                             | Contoh                                                         |
+| ---------------------------------- | -------------------------------------------------------------- |
+| **Data (Dataset)**           | Dataset transaksi 2020-2023, tidak mencakup data retur         |
+| **Fungsionalitas (Fitur)**   | Fokus Backend API & algoritma, Frontend hanya prototipe        |
+| **Metode/Algoritma**         | Deteksi objek pakai YOLO v5, tidak bandingkan versi sebelumnya |
+| **Lingkungan (Environment)** | Android minimal versi 10 (Q), butuh akses GPS                  |
 
 #### Contoh Batasan Masalah (Deteksi Stroke)
 
@@ -596,19 +603,19 @@ Menentukan:
 
 > 💡 **Tips:** Tujuan penelitian harus memiliki hubungan **1:1** dengan rumusan masalah!
 
-| Rumusan Masalah | Tujuan Penelitian |
-|-----------------|-------------------|
-| Bagaimana penerapan algoritma K-NN dan Naïve Bayes? | Menerapkan algoritma K-NN dan Naïve Bayes dalam mendeteksi risiko penyakit stroke |
-| Bagaimana performa algoritma K-NN dan Naïve Bayes? | Menganalisis performa algoritma K-NN dan Naïve Bayes dalam mendeteksi penyakit stroke |
-| Algoritma manakah yang memiliki performa terbaik? | Menentukan algoritma yang memiliki performa klasifikasi terbaik dalam mendeteksi penyakit stroke |
+| Rumusan Masalah                                      | Tujuan Penelitian                                                                                |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Bagaimana penerapan algoritma K-NN dan Naïve Bayes? | Menerapkan algoritma K-NN dan Naïve Bayes dalam mendeteksi risiko penyakit stroke               |
+| Bagaimana performa algoritma K-NN dan Naïve Bayes?  | Menganalisis performa algoritma K-NN dan Naïve Bayes dalam mendeteksi penyakit stroke           |
+| Algoritma manakah yang memiliki performa terbaik?    | Menentukan algoritma yang memiliki performa klasifikasi terbaik dalam mendeteksi penyakit stroke |
 
 ---
 
 ### Manfaat Penelitian
 
-| Konsep | Keterangan |
-|--------|-----------|
-| **Tujuan** | Apa yang dihasilkan |
+| Konsep            | Keterangan                                   |
+| ----------------- | -------------------------------------------- |
+| **Tujuan**  | Apa yang dihasilkan                          |
 | **Manfaat** | Siapa yang diuntungkan & bagaimana dampaknya |
 
 #### Manfaat Teoritis
@@ -627,11 +634,13 @@ Menentukan:
 #### Contoh Manfaat Penelitian (Deteksi Stroke)
 
 **Manfaat Teoritis:**
+
 - Memperkaya literatur ML pada klasifikasi penyakit stroke
 - Memberikan validasi metode klasifikasi ML (K-NN, Naïve Bayes)
 - Menjadi referensi penelitian selanjutnya bidang data mining & ML kesehatan
 
 **Manfaat Praktis:**
+
 - Mendukung deteksi dini penyakit stroke dengan model ML
 - Menyediakan informasi performa algoritma klasifikasi sebagai pertimbangan pengembangan sistem
 - Membantu pemanfaatan data kesehatan secara optimal untuk analisis prediktif
@@ -655,10 +664,10 @@ Menentukan:
 
 ### Kapan Hipotesis Digunakan?
 
-| ✅ Jika | ❌ Jika |
-|---------|---------|
-| Menguji hubungan variabel | Hanya membangun sistem |
-| Analisis statistik | Mengembangkan aplikasi |
+| ✅ Jika                          | ❌ Jika                              |
+| -------------------------------- | ------------------------------------ |
+| Menguji hubungan variabel        | Hanya membangun sistem               |
+| Analisis statistik               | Mengembangkan aplikasi               |
 | Membandingkan metode kuantitatif | Implementasi algoritma (tidak wajib) |
 
 ---
@@ -670,6 +679,7 @@ Menentukan:
 Kalimat pernyataan konseptual yang menjelaskan dugaan hubungan antar variabel.
 
 **Contoh:**
+
 > Penggunaan algoritma K-Nearest Neighbor dapat meningkatkan akurasi klasifikasi penyakit stroke.
 
 #### 2. Hipotesis Operasional
@@ -677,6 +687,7 @@ Kalimat pernyataan konseptual yang menjelaskan dugaan hubungan antar variabel.
 Diturunkan dari hipotesis penelitian. Dua bentuk: **Hipotesis Nol (H0)** & **Hipotesis Alternatif (H1)**.
 
 **Contoh:**
+
 - **H0:** Tidak terdapat perbedaan performa antara algoritma K-NN dan Naïve Bayes
 - **H1:** Terdapat perbedaan performa antara algoritma K-NN dan Naïve Bayes
 
@@ -685,6 +696,7 @@ Diturunkan dari hipotesis penelitian. Dua bentuk: **Hipotesis Nol (H0)** & **Hip
 Dinyatakan dalam bentuk parameter atau angka statistik.
 
 **Contoh:**
+
 - **H0:** rata-rata akurasi K-NN = rata-rata akurasi Naïve Bayes
 - **H1:** rata-rata akurasi K-NN ≠ rata-rata akurasi Naïve Bayes
 
@@ -732,10 +744,10 @@ Proses mengidentifikasi, mengevaluasi, dan mensintesis penelitian sebelumnya yan
 
 ### Struktur Literature Review
 
-| Bagian | Keterangan |
-|--------|-----------|
-| **Tinjauan Penelitian Terkait** (Related Works / State of the Art) | Penelitian sebelumnya yang relevan |
-| **Landasan Teori** (Theoretical Foundation) | Konsep, metode, algoritma yang digunakan |
+| Bagian                                                                   | Keterangan                               |
+| ------------------------------------------------------------------------ | ---------------------------------------- |
+| **Tinjauan Penelitian Terkait** (Related Works / State of the Art) | Penelitian sebelumnya yang relevan       |
+| **Landasan Teori** (Theoretical Foundation)                        | Konsep, metode, algoritma yang digunakan |
 
 ---
 
@@ -746,6 +758,7 @@ Membahas penelitian sebelumnya yang memiliki kesamaan (topik, metode, objek, dat
 #### State of the Art
 
 Perkembangan terbaru penelitian:
+
 - Metode paling sering digunakan
 - Teknologi berkembang
 - Keterbatasan penelitian sebelumnya
@@ -753,34 +766,36 @@ Perkembangan terbaru penelitian:
 #### Research Gap
 
 Celah penelitian yang belum diselesaikan:
+
 - Metode belum optimal
 - Dataset terbatas
 - Akurasi rendah
 - Pendekatan belum digunakan
 
 **Contoh:**
+
 > Penelitian sebelumnya akurasi 78% dengan Naive Bayes. Penelitian baru mencoba Decision Tree dengan SMOTE untuk meningkatkan performa.
 
 ---
 
 ### Syarat Related Works
 
-| # | Syarat |
-|---|--------|
-| 1 | Minimal **5 Jurnal Ilmiah/Prosiding** (5 tahun terakhir) |
-| 2 | Relevan (topik, metode, atau objek mirip) |
-| 3 | **Wajib ada Tabel Perbandingan** |
-| 4 | Tempatkan rujukan utama paling atas dan tahun terbaru |
+| # | Syarat                                                        |
+| - | ------------------------------------------------------------- |
+| 1 | Minimal**5 Jurnal Ilmiah/Prosiding** (5 tahun terakhir) |
+| 2 | Relevan (topik, metode, atau objek mirip)                     |
+| 3 | **Wajib ada Tabel Perbandingan**                        |
+| 4 | Tempatkan rujukan utama paling atas dan tahun terbaru         |
 
 > 💡 **Tips:** Jangan hanya naratif! Tabel perbandingan itu kuncinya.
 
 #### Contoh Tabel Perbandingan
 
-| Peneliti (Tahun) | Metode | Dataset | Hasil | Kelemahan | Research Gap |
-|------------------|--------|---------|-------|-----------|--------------|
-| Ahmad (2022) | Naive Bayes | 1000 review | Akurasi 78% | Tidak pakai SMOTE | Perlu balancing data |
-| Budi (2023) | SVM | 500 review | Akurasi 82% | Dataset kecil | Perlu dataset lebih besar |
-| **Penelitian Ini** | Decision Tree + SMOTE | 2000 review | - | - | Mengatasi imbalance |
+| Peneliti (Tahun)         | Metode                | Dataset     | Hasil       | Kelemahan         | Research Gap              |
+| ------------------------ | --------------------- | ----------- | ----------- | ----------------- | ------------------------- |
+| Ahmad (2022)             | Naive Bayes           | 1000 review | Akurasi 78% | Tidak pakai SMOTE | Perlu balancing data      |
+| Budi (2023)              | SVM                   | 500 review  | Akurasi 82% | Dataset kecil     | Perlu dataset lebih besar |
+| **Penelitian Ini** | Decision Tree + SMOTE | 2000 review | -           | -                 | Mengatasi imbalance       |
 
 ---
 
@@ -788,12 +803,12 @@ Celah penelitian yang belum diselesaikan:
 
 Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 
-| ✅ Gunakan | ❌ Hindari |
-|-----------|------------|
-| Protokol MQTT | Sejarah Internet |
-| Arsitektur PWA | Definisi umum website/komputer |
-| Algoritma Decision Tree | Biografi penemu algoritma |
-| Confusion Matrix | Pengetahuan umum |
+| ✅ Gunakan              | ❌ Hindari                     |
+| ----------------------- | ------------------------------ |
+| Protokol MQTT           | Sejarah Internet               |
+| Arsitektur PWA          | Definisi umum website/komputer |
+| Algoritma Decision Tree | Biografi penemu algoritma      |
+| Confusion Matrix        | Pengetahuan umum               |
 
 ---
 
@@ -817,9 +832,9 @@ Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 
 ### Tools Pencarian Literatur
 
-| Kategori | Tools |
-|----------|-------|
-| **Database** | Google Scholar, IEEE Xplore, ScienceDirect, ACM Digital Library, SpringerLink |
+| Kategori           | Tools                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| **Database** | Google Scholar, IEEE Xplore, ScienceDirect, ACM Digital Library, SpringerLink      |
 | **AI Tools** | Research Rabbit, Connected Papers, Elicit AI, Scite AI, Semantic Scholar, Jenni AI |
 
 ---
@@ -832,45 +847,45 @@ Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 
 ### Tiga Masalah Serius Tanpa Sitasi
 
-| Masalah | Keterangan |
-|---------|-----------|
-| **Plagiarisme** | Menggunakan ide/teks orang lain tanpa atribusi = pencurian intelektual. Sanksi: pembatalan skripsi |
-| **Tidak Terverifikasi** | Klaim ilmiah harus bisa diperiksa ulang |
-| **Tidak Menghargai Komunitas** | Tidak mensitasi mereka = tidak menghargai kontribusi mereka |
+| Masalah                              | Keterangan                                                                                         |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| **Plagiarisme**                | Menggunakan ide/teks orang lain tanpa atribusi = pencurian intelektual. Sanksi: pembatalan skripsi |
+| **Tidak Terverifikasi**        | Klaim ilmiah harus bisa diperiksa ulang                                                            |
+| **Tidak Menghargai Komunitas** | Tidak mensitasi mereka = tidak menghargai kontribusi mereka                                        |
 
 ---
 
 ### Jenis-Jenis Sitasi
 
-| Jenis | Keterangan | Contoh |
-|-------|-----------|--------|
-| **Direct Quotation** (Kutipan Langsung) | Mengambil kata-kata PERSIS dari sumber, pakai tanda petik. Wajib cantumkan nomor halaman. | "Deep learning is a class of machine learning algorithms..." (LeCun et al., 2015, p. 436) |
-| **Paraphrase** (Parafrase) | Menyatakan IDE dari sumber dengan kata-kata ANDA SENDIRI. Tetap harus disitasi! | Deep learning memanfaatkan susunan berlapis untuk mengekstrak fitur secara bertahap (LeCun et al., 2015) |
-| **Summary** (Ringkasan) | Merangkum argumen/temuan utama dari sumber yang lebih panjang dalam beberapa kalimat | - |
+| Jenis                                         | Keterangan                                                                                | Contoh                                                                                                   |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Direct Quotation** (Kutipan Langsung) | Mengambil kata-kata PERSIS dari sumber, pakai tanda petik. Wajib cantumkan nomor halaman. | "Deep learning is a class of machine learning algorithms..." (LeCun et al., 2015, p. 436)                |
+| **Paraphrase** (Parafrase)              | Menyatakan IDE dari sumber dengan kata-kata ANDA SENDIRI. Tetap harus disitasi!           | Deep learning memanfaatkan susunan berlapis untuk mengekstrak fitur secara bertahap (LeCun et al., 2015) |
+| **Summary** (Ringkasan)                 | Merangkum argumen/temuan utama dari sumber yang lebih panjang dalam beberapa kalimat      | -                                                                                                        |
 
 ---
 
 ### Aturan Sitasi
 
-| # | Aturan | Keterangan |
-|---|--------|-----------|
-| 1 | **Konsistensi Gaya** | Gunakan SATU gaya sitasi sepanjang dokumen |
-| 2 | **Ketertelusuran** | Setiap sitasi di teks HARUS ada di daftar pustaka |
-| 3 | **Primer vs Sekunder** | Usahakan sitasi ke sumber primer (paper asli) |
-| 4 | **Jumlah Penulis** | 1-2 penulis: sebut semua. 3+ penulis: nama pertama + et al. |
-| 5 | **Sitasi Multiple** | (Smith, 2020; Jones, 2021) atau [1], [2], [3] |
-| 6 | **Nomor Halaman** | Kutipan verbatim wajib cantumkan halaman: (Smith, 2023, p. 45) |
+| # | Aturan                       | Keterangan                                                     |
+| - | ---------------------------- | -------------------------------------------------------------- |
+| 1 | **Konsistensi Gaya**   | Gunakan SATU gaya sitasi sepanjang dokumen                     |
+| 2 | **Ketertelusuran**     | Setiap sitasi di teks HARUS ada di daftar pustaka              |
+| 3 | **Primer vs Sekunder** | Usahakan sitasi ke sumber primer (paper asli)                  |
+| 4 | **Jumlah Penulis**     | 1-2 penulis: sebut semua. 3+ penulis: nama pertama + et al.    |
+| 5 | **Sitasi Multiple**    | (Smith, 2020; Jones, 2021) atau [1], [2], [3]                  |
+| 6 | **Nomor Halaman**      | Kutipan verbatim wajib cantumkan halaman: (Smith, 2023, p. 45) |
 
 ---
 
 ### Gaya Sitasi
 
-| Gaya | In-text | Urutan Daftar Pustaka | Bidang Utama | Gunakan di Informatika? |
-|------|---------|----------------------|--------------|------------------------|
-| **APA (7th)** | (Penulis, Tahun) | Abjad nama | Sosial, Pendidikan, S1 umum Indonesia | Cukup, untuk skripsi umum |
-| **Harvard** | (Penulis, Tahun) | Abjad nama | UK/Australia, Bisnis, Manajemen | Jarang |
-| **Vancouver** | [1] / superscript | Urutan muncul | Kedokteran, Kesehatan, Biologi | Hanya health informatics |
-| **IEEE** | [1], [2]-[5] | Urutan muncul | Informatika, Teknik, Elektro | **WAJIB** untuk paper teknis |
+| Gaya                | In-text           | Urutan Daftar Pustaka | Bidang Utama                          | Gunakan di Informatika?            |
+| ------------------- | ----------------- | --------------------- | ------------------------------------- | ---------------------------------- |
+| **APA (7th)** | (Penulis, Tahun)  | Abjad nama            | Sosial, Pendidikan, S1 umum Indonesia | Cukup, untuk skripsi umum          |
+| **Harvard**   | (Penulis, Tahun)  | Abjad nama            | UK/Australia, Bisnis, Manajemen       | Jarang                             |
+| **Vancouver** | [1] / superscript | Urutan muncul         | Kedokteran, Kesehatan, Biologi        | Hanya health informatics           |
+| **IEEE**      | [1], [2]-[5]      | Urutan muncul         | Informatika, Teknik, Elektro          | **WAJIB** untuk paper teknis |
 
 ---
 
@@ -909,6 +924,7 @@ Konsep, metode, atau algoritma yang digunakan dalam penelitian.
 **In-text:** `(Penulis, Tahun)` atau `Penulis (Tahun)`
 
 **Daftar Pustaka:**
+
 ```
 Jurnal: LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436-444. https://doi.org/10.1038/nature14539
 Buku: Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
@@ -920,6 +936,7 @@ Website: TensorFlow. (2024). Getting started. https://www.tensorflow.org
 **In-text:** `(LeCun, Bengio and Hinton, 2015)`
 
 **Daftar Pustaka:**
+
 ```
 Jurnal: LeCun, Y., Bengio, Y. and Hinton, G., 2015. Deep learning. Nature, 521(7553), pp.436-444.
 ```
@@ -929,6 +946,7 @@ Jurnal: LeCun, Y., Bengio, Y. and Hinton, G., 2015. Deep learning. Nature, 521(7
 **In-text:** `...terbukti efektif¹` atau `...(1)`
 
 **Daftar Pustaka:**
+
 ```
 1. LeCun Y, Bengio Y, Hinton G. Deep learning. Nature. 2015 May;521(7553):436-44.
 ```
@@ -938,12 +956,14 @@ Jurnal: LeCun, Y., Bengio, Y. and Hinton, G., 2015. Deep learning. Nature, 521(7
 **Standar wajib** untuk publikasi di venue informatika: IEEE Transactions, ACM, JUTI, IJCCS, ICACSIS.
 
 **In-text:**
+
 ```
 ...pendekatan deep learning [1] telah digunakan [2], [3] dalam klasifikasi citra medis [1], [4]-[6]. 
 Menurut [7], sistem ini lebih efisien.
 ```
 
 **Daftar Pustaka:**
+
 ```
 Jurnal: [1] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, May 2015.
 Conference: [2] A. Vaswani et al., "Attention is all you need," in Proc. NeurIPS, 2017, pp. 5998–6008.
@@ -954,32 +974,32 @@ Website: [3] GitHub, "TensorFlow repository," [Online]. Available: https://githu
 
 ### Reference List vs Bibliography
 
-| Jenis | Keterangan |
-|-------|-----------|
-| **Reference List** | Hanya memuat sumber yang **BENAR-BENAR disitasi** dalam teks |
-| **Bibliography** | Memuat semua sumber yang dibaca/dikonsultasikan, termasuk yang tidak disitasi langsung |
+| Jenis                    | Keterangan                                                                             |
+| ------------------------ | -------------------------------------------------------------------------------------- |
+| **Reference List** | Hanya memuat sumber yang**BENAR-BENAR disitasi** dalam teks                      |
+| **Bibliography**   | Memuat semua sumber yang dibaca/dikonsultasikan, termasuk yang tidak disitasi langsung |
 
 ---
 
 ### Lima Aturan Teknis Wajib
 
-| # | Aturan | Keterangan |
-|---|--------|-----------|
-| 1 | **Sinkronisasi** | Setiap sitasi di teks HARUS ada di daftar pustaka dan sebaliknya |
-| 2 | **Format per Jenis** | Jurnal, buku, conference, website, tesis — masing-masing format berbeda |
-| 3 | **Urutan Sesuai Gaya** | APA/Harvard (abjad), IEEE/Vancouver (urutan kemunculan) |
-| 4 | **DOI Wajib** | Selalu cantumkan jika tersedia (https://doi.org/...) |
-| 5 | **Informasi Minimum** | Penulis, tahun, judul, sumber, DOI/URL |
+| # | Aturan                       | Keterangan                                                               |
+| - | ---------------------------- | ------------------------------------------------------------------------ |
+| 1 | **Sinkronisasi**       | Setiap sitasi di teks HARUS ada di daftar pustaka dan sebaliknya         |
+| 2 | **Format per Jenis**   | Jurnal, buku, conference, website, tesis — masing-masing format berbeda |
+| 3 | **Urutan Sesuai Gaya** | APA/Harvard (abjad), IEEE/Vancouver (urutan kemunculan)                  |
+| 4 | **DOI Wajib**          | Selalu cantumkan jika tersedia (https://doi.org/...)                     |
+| 5 | **Informasi Minimum**  | Penulis, tahun, judul, sumber, DOI/URL                                   |
 
 ---
 
 ### Tools Manajemen Sitasi
 
-| Tool | Keterangan |
-|------|-----------|
-| **Zotero** | GRATIS + Open Source. Import otomatis dari browser, simpan PDF + anotasi, integrasi Word & Google Docs |
-| **Mendeley** | Freemium (Elsevier). Jaringan sosial akademik, PDF annotator bawaan, rekomendasi paper terkait |
-| **EndNote** | Berbayar / Lisensi Kampus. Fitur paling lengkap, integrasi Word terbaik |
+| Tool               | Keterangan                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Zotero**   | GRATIS + Open Source. Import otomatis dari browser, simpan PDF + anotasi, integrasi Word & Google Docs |
+| **Mendeley** | Freemium (Elsevier). Jaringan sosial akademik, PDF annotator bawaan, rekomendasi paper terkait         |
+| **EndNote**  | Berbayar / Lisensi Kampus. Fitur paling lengkap, integrasi Word terbaik                                |
 
 ---
 

@@ -23,8 +23,11 @@ adm-server/
 ├── meet3/                      # SSH & Web Server
 │   ├── Remote-SSH&web-server.md  # Remote access & Nginx
 │   └── image/                  # Asset gambar dokumentasi
-└── meet4/                      # SFTP & Web Deployment
-    ├── sftp.md                 # Migrasi data dengan FileZilla
+├── meet4/                      # SFTP & Web Deployment
+│   ├── sftp.md                 # Migrasi data dengan FileZilla
+│   └── image/                  # Asset gambar dokumentasi
+└── meet5/                      # Database Server
+    ├── mariadb.md              # Instalasi & konfigurasi MariaDB
     └── image/                  # Asset gambar dokumentasi
 ```
 
@@ -39,6 +42,7 @@ adm-server/
 | Meet 2 | Billing Alert Setup | `meet2/Billing-Alert.md` |
 | Meet 3 | Remote SSH & Web Server | `meet3/Remote-SSH&web-server.md` |
 | Meet 4 | SFTP & Web Deployment | `meet4/sftp.md` |
+| Meet 5 | Database Server (MariaDB) | `meet5/mariadb.md` |
 
 ---
 
@@ -99,6 +103,19 @@ meet4/sftp.md
 - FileZilla Client
 - SSH access untuk ubah hak akses folder
 
+### 6. Database Server (MariaDB)
+
+Instalasi dan konfigurasi database server:
+```
+meet5/mariadb.md
+```
+
+**Yang dilakukan:**
+- Instalasi MariaDB
+- Hardening database server
+- Membuat database dan user
+- Mengatur hak akses (privileges)
+
 ---
 
 ## 🔑 Konsep Penting
@@ -155,6 +172,7 @@ Hak akses file/folder di Linux (owner, group, others).
 | FileZilla | SFTP/FTP client untuk transfer file |
 | PowerShell | Terminal untuk SSH di Windows |
 | nano/vim | Text editor di Linux terminal |
+| MariaDB | Database server open-source |
 
 ---
 
@@ -170,6 +188,9 @@ Hak akses file/folder di Linux (owner, group, others).
 - [ ] FileZilla terinstall dan bisa koneksi SFTP
 - [ ] Paham cara ubah hak akses folder di Linux
 - [ ] Berhasil deploy file website ke `/var/www/html`
+- [ ] MariaDB terinstall dan status active (running)
+- [ ] Database sudah di-hardening
+- [ ] Berhasil membuat database dan user dengan hak akses yang benar
 
 ---
 
@@ -181,6 +202,7 @@ Hak akses file/folder di Linux (owner, group, others).
 - **AWS Pricing Calculator:** https://calculator.aws/
 - **FileZilla:** https://filezilla-project.org/
 - **Linux File Permissions:** https://www.linux.com/training-tutorials/understanding-linux-file-permissions/
+- **MariaDB Documentation:** https://mariadb.com/kb/en/documentation/
 
 ---
 

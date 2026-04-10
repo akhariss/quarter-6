@@ -7,6 +7,7 @@
 ## 🎯 Tujuan Praktikum
 
 Setelah mengikuti praktikum ini, kamu akan:
+
 - Mampu menginstal dan konfigurasi MariaDB di server EC2
 - Memahami pentingnya hardening database server
 - Mampu membuat database, user, dan mengatur hak akses
@@ -32,11 +33,13 @@ Pastikan instance EC2 kamu sudah running sebelum melakukan koneksi.
 Lakukan remote connection ke server menggunakan PowerShell atau PuTTY.
 
 **Via PowerShell (OpenSSH):**
+
 ```powershell
 ssh -i nama_file-Private-Key.pem ubuntu@[IP_ADDRESS]
 ```
 
 **Via PuTTY:**
+
 1. Buka PuTTY
 2. Isi Host Name (Public IP), Port 22
 3. Load private key `.ppk`
@@ -79,15 +82,14 @@ systemctl status mariadb
 ```
 
 Output yang diharapkan:
+
 ```
 ● mariadb.service - MariaDB 10.6.19 database server
    Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; preset: enabled)
    Active: active (running) since ...
 ```
 
-> ✅ Pastikan statusnya **active (running)**
-
-![alt text](image.png)
+> ✅ Pastikan statusnya **active (running)
 
 ---
 
@@ -104,8 +106,8 @@ sudo mysql -u root -p
 - Ketik `exit;` untuk keluar
 
 > ⚠️ **Masalah:** Defaultnya, root belum punya password dan bisa login tanpa autentikasi. Ini berbahaya untuk keamanan!
-
-![alt text](image-1.png)
+>
+> ![1775793288932](image/mariadb/1775793288932.png)
 
 ---
 
@@ -120,18 +122,16 @@ sudo mysql_secure_installation
 
 Kamu akan ditanya beberapa pertanyaan. Jawab dengan **Y** (Yes) untuk semua:
 
-| Pertanyaan | Jawaban | Keterangan |
-|------------|---------|-----------|
-| **Switch to unix_socket authentication?** | Y | Gunakan autentikasi socket yang lebih aman |
-| **Change the root password?** | Y | Set password untuk user root |
-| **Remove anonymous users?** | Y | Hapus user tanpa nama (bahaya!) |
-| **Disallow root login remotely?** | Y | Root hanya boleh login dari localhost |
-| **Remove test database and access to it?** | Y | Hapus database test yang tidak terpakai |
-| **Reload privilege tables now?** | Y | Muat ulang tabel hak akses |
+| Pertanyaan                                       | Jawaban | Keterangan                                 |
+| ------------------------------------------------ | ------- | ------------------------------------------ |
+| **Switch to unix_socket authentication?**  | Y       | Gunakan autentikasi socket yang lebih aman |
+| **Change the root password?**              | Y       | Set password untuk user root               |
+| **Remove anonymous users?**                | Y       | Hapus user tanpa nama (bahaya!)            |
+| **Disallow root login remotely?**          | Y       | Root hanya boleh login dari localhost      |
+| **Remove test database and access to it?** | Y       | Hapus database test yang tidak terpakai    |
+| **Reload privilege tables now?**           | Y       | Muat ulang tabel hak akses                 |
 
 > 🔐 **Penting:** Jangan skip langkah ini! Server database yang tidak di-hardening sangat rentan di-hack.
-
-![alt text](image-2.png)
 
 ---
 
@@ -147,6 +147,8 @@ sudo mysql -u root -p
 
 Masukkan password root yang sudah dibuat saat hardening.
 
+![1775793403153](image/mariadb/1775793403153.png)
+
 ---
 
 #### b. Buat Database Baru
@@ -157,6 +159,8 @@ CREATE DATABASE dbcompro_NIM;
 
 Ganti `NIM` dengan NIM kamu. Contoh: `dbcompro_2388010004`
 
+![1775793426544](image/mariadb/1775793426544.png)
+
 ---
 
 #### c. Buat User Baru
@@ -166,10 +170,12 @@ CREATE USER 'usrcompro_NIM'@'localhost' IDENTIFIED BY '[PASSWORD]';
 ```
 
 Ganti:
+
 - `NIM` dengan NIM kamu
 - `[PASSWORD]` dengan password yang kuat
 
 Contoh:
+
 ```sql
 CREATE USER 'usrcompro_2388010004'@'localhost' IDENTIFIED BY 'Password123!';
 ```
@@ -194,6 +200,8 @@ FLUSH PRIVILEGES;
 
 Perintah ini memastikan perubahan hak akses langsung diterapkan.
 
+![1775793462052](image/mariadb/1775793462052.png)
+
 ---
 
 #### f. Keluar dan Login sebagai User Baru
@@ -214,23 +222,10 @@ Masukkan password yang sudah dibuat.
 
 #### g. Verifikasi Akses Database
 
-Setelah login sebagai user baru, cek database yang bisa diakses:
-
-```sql
-SHOW DATABASES;
-```
+Setelah login sebagai user baru, cek database yang bisa diakses:SHOW DATABASES;
 
 Pastikan `dbcompro_NIM` muncul di daftar.
 
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-
-![1775790948068](image/mariadb/1775790948068.png)
-![1775791565064](image/mariadb/1775791565064.png)
-![1775791667526](image/mariadb/1775791667526.png)
-![1775792002074](image/mariadb/1775792002074.png)
-![1775792407609](image/mariadb/1775792407609.png)
 ![1775792890724](image/mariadb/1775792890724.png)
 
 ---
@@ -251,20 +246,21 @@ Pastikan `dbcompro_NIM` muncul di daftar.
 
 ## ❓ FAQ
 
-**Q: Apa bedanya MariaDB dengan MySQL?**  
+**Q: Apa bedanya MariaDB dengan MySQL?**
 A: MariaDB adalah fork dari MySQL yang lebih open-source, lebih cepat, dan punya fitur lebih banyak. Kompatibel penuh dengan MySQL.
 
-**Q: Kenapa harus hardening?**  
+**Q: Kenapa harus hardening?**
 A: Default MariaDB tidak aman — root tanpa password, ada anonymous user, dan test database. Hardening menutup semua celah keamanan ini.
 
-**Q: Apa fungsi FLUSH PRIVILEGES?**  
+**Q: Apa fungsi FLUSH PRIVILEGES?**
 A: Memuat ulang tabel hak akses agar perubahan yang kita buat langsung diterapkan tanpa perlu restart service.
 
-**Q: Kenapa user '@'localhost'?**  
+**Q: Kenapa user '@'localhost'?**
 A: Artinya user hanya bisa login dari server yang sama (localhost). Tidak bisa akses dari luar — ini lebih aman untuk database server.
 
-**Q: Bagaimana cara hapus database atau user?**  
-A: 
+**Q: Bagaimana cara hapus database atau user?**
+A:
+
 ```sql
 DROP DATABASE dbcompro_NIM;
 DROP USER 'usrcompro_NIM'@'localhost';

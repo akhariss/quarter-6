@@ -21,6 +21,7 @@ Repository ini berisi **materi kuliah, panduan praktikum, dan dokumentasi tugas*
 | **Metodologi Penelitian** | [`metopen/`](metopen/README.md) | 📁 Materi & Tugas |
 | **Cyber Security** | [`cyber-sec/`](cyber-sec/README.md) | 📁 Tugas |
 | **Rekayasa Perangkat Lunak** | [`ppl/`](ppl/README.md) | 📁 Dokumentasi |
+| **Etika Profesi** | [`etika profesi/`](etika%20profesi/README.md) | 📁 Materi |
 
 ---
 
@@ -113,6 +114,14 @@ Dokumentasi analisis dan desain sistem perangkat lunak.
 
 ---
 
+### Etika Profesi
+
+Materi etika profesi dalam bidang teknologi informasi.
+
+📖 **Lengkapnya:** [`etika profesi/README.md`](etika%20profesi/README.md)
+
+---
+
 ## 📊 Repository Structure
 
 ```
@@ -156,6 +165,10 @@ quarter-6/
 ├── ppl/                 # Rekayasa Perangkat Lunak
 │   ├── README.md
 │   └── bimbingan 1/     # Bimbingan pertama
+│
+├── etika profesi/       # Etika Profesi
+│   ├── README.md
+│   └── materi1-7.pdf    # Materi pertemuan 1-7
 │
 ├── LICENSE
 └── README.md

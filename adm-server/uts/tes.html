@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Kharis — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --bg-elevated: #11141a;
+      --bg-card: #161a22;
+      --text-main: #e8e6e1;
+      --text-muted: #8a909c;
+      --text-dim: #5c6370;
+      --accent: #c4b5a0;
+      --border: #232832;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9999;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 5%; }
+    
+    nav {
+      position: fixed; top: 0; width: 100%;
+      background: rgba(10,12,16,0.85); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border); z-index: 1000; padding: 16px 0;
+    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.5px; text-decoration: none; color: var(--text-main); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .hero {
+      padding: 140px 0 80px;
+      display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: end;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 16px; }
+    .hero .tagline { font-size: 1.25rem; color: var(--accent); margin-bottom: 12px; font-weight: 400; }
+    .hero .edu { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; }
+    .hero .cta-group { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;
+      text-decoration: none; transition: all 0.2s; cursor: pointer; border: none;
+    }
+    .btn-primary { background: var(--accent); color: var(--bg); }
+    .btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn-outline { border: 1px solid var(--border); color: var(--text-main); background: transparent; }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 40px; }
+    .section-title { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.5px; }
+    .section-subtitle { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
+    .about-text p { color: var(--text-muted); margin-bottom: 16px; }
+    .about-text strong { color: var(--text-main); }
+    .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+    .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: border-color 0.2s; }
+    .stat-card:hover { border-color: var(--accent); }
+    .stat-num { font-size: 2rem; font-weight: 700; color: var(--accent); display: block; }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* SLIDER STYLES */
+    .slider-wrapper { position: relative; overflow: hidden; border-radius: 12px; }
+    .slider-track { display: flex; transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .slide { min-width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 4px; }
+    .project-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); position: relative; overflow: hidden;
+    }
+    .project-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .project-card.featured { grid-column: span 2; }
+    .project-card h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 8px; }
+    .project-card p { color: var(--text-muted); font-size: 0.9rem; flex-grow: 1; }
+    .project-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .tech-stack { display: flex; gap: 8px; flex-wrap: wrap; }
+    .tech-tag { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); background: rgba(255,255,255,0.03); padding: 4px 8px; border-radius: 4px; }
+    .project-link { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+    .project-link:hover { text-decoration: underline; }
+
+    .slider-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text-main);
+      width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 10;
+    }
+    .slider-btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    .slider-btn.prev { left: 10px; }
+    .slider-btn.next { right: 10px; }
+    .slider-dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); cursor: pointer; transition: all 0.3s; }
+    .dot.active { background: var(--accent); transform: scale(1.2); }
+
+    .expertise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .skill-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-pill {
+      padding: 8px 16px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 20px;
+      font-size: 0.85rem; color: var(--text-muted); transition: all 0.2s; cursor: default;
+    }
+    .skill-pill:hover { border-color: var(--accent); color: var(--text-main); background: var(--bg-card); }
+    .cert-list { display: grid; gap: 12px; }
+    .cert-item { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .cert-item:last-child { border-bottom: none; }
+    .cert-name { font-weight: 500; font-size: 0.95rem; }
+    .cert-issuer { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); }
+    .cert-badge { font-size: 0.75rem; background: rgba(196, 181, 160, 0.1); color: var(--accent); padding: 4px 8px; border-radius: 4px; }
+
+    footer { padding: 80px 0 40px; text-align: center; }
+    .footer-grid { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+    .footer-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border); }
+    .footer-name { font-size: 1.2rem; font-weight: 600; }
+    .footer-details { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-copy { font-size: 0.8rem; color: var(--text-dim); margin-top: 20px; }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; padding-top: 120px; text-align: center; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero .cta-group { justify-content: center; }
+      .about-grid, .expertise-grid { grid-template-columns: 1fr; gap: 40px; }
+      .slide { grid-template-columns: 1fr; }
+      .project-card.featured { grid-column: span 1; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">akhariss</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Abdul Kharis</h1>
+        <p class="tagline">Full Stack Developer & Problem Solver</p>
+        <p class="edu">Informatics @ UIN Siber Syekh Nurjati Cirebon</p>
+        <div class="cta-group">
+          <button class="btn btn-primary" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+          <a href="https://github.com/akhariss" target="_blank" class="btn btn-outline">GitHub</a>
+          <a href="https://linkedin.com/in/abdul-kharis" target="_blank" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+      <div style="text-align: right; color: var(--text-dim); font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.8;">
+        <p><i class="fas fa-map-marker-alt"></i> Cirebon, ID</p>
+        <p><i class="fas fa-envelope"></i> abdulkharis2234@gmail.com</p>
+        <p><i class="fas fa-globe"></i> konfigura.cloud</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-grid">
+        <div>
+          <div class="section-header">
+            <h2 class="section-title">About</h2>
+          </div>
+          <div class="about-text">
+            <p>Mahasiswa Informatika dengan fokus pada pengembangan aplikasi web yang scalable dan user-centric. Berpengalaman merancang arsitektur backend, membangun REST API yang aman, dan mengintegrasikan cloud infrastructure untuk solusi nyata.</p>
+            <p>Passion saya terletak di persimpangan <strong>clean code, automation, dan data-driven decision making</strong>. Saya percaya teknologi terbaik adalah yang tidak terlihat—hanya bekerja dengan mulus di balik layar.</p>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-num">6+</span><span class="stat-label">Production Repos</span></div>
+          <div class="stat-card"><span class="stat-num">8+</span><span class="stat-label">Professional Certs</span></div>
+          <div class="stat-card"><span class="stat-num">100%</span><span class="stat-label">Commitment to Quality</span></div>
+          <div class="stat-card"><span class="stat-num">24/7</span><span class="stat-label">Problem-Solving Mode</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Selected Work</h2>
+        <span class="section-subtitle">01 — 02</span>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+          <!-- SLIDE 1 -->
+          <div class="slide">
+            <div class="project-card">
+              <div>
+                <h3>Kreme Dessert House</h3>
+                <p>Aplikasi fokus pada bisnis dessert/kue. Dibangun dengan JavaScript (90.4%) dan PL/pgSQL (9.6%) untuk manajemen produk dan database.</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">JavaScript</span><span class="tech-tag">PL/pgSQL</span></div>
+                <a href="https://github.com/akhariss/kreme-dessert-house" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Informatics Fair Vol. 1</h3>
+                <p>Platform pendaftaran event nasional dengan manajemen 5 kategori lomba & workshop. Menangani ratusan pendaftar dengan sistem verifikasi otomatis.</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">HTML/CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Event System</span></div>
+                <a href="https://konfigura.cloud/it-fair/" target="_blank" class="project-link">Live Site <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Gemini Canvas</h3>
+                <p>Sistem informasi kampus dengan dashboard terpusat, notifikasi real-time, dan manajemen ruangan cerdas untuk mencegah bentrok jadwal.</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">Full Stack</span><span class="tech-tag">Real-time</span></div>
+                <a href="https://konfigura.cloud/blog/" target="_blank" class="project-link">View <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Notaris & PPAT Online</h3>
+                <p>Platform layanan notaris dengan tracking dokumen real-time dan integrasi WhatsApp Business untuk komunikasi responsif.</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+                <a href="https://nora.konfigura.cloud" target="_blank" class="project-link">Live Site <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="slide">
+            <div class="project-card featured">
+              <div>
+                <h3>Garda ⭐ — PKL Management System</h3>
+                <p>Sistem manajemen magang dengan logbook digital, generate laporan akhir otomatis, dan mengurangi beban administratif. Stack: PHP (80.7%), CSS (17%), JS (2.3%).</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Automation</span></div>
+                <a href="https://github.com/akhariss/Garda" target="_blank" class="project-link">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Personal Finance Backend</h3>
+                <p>Backend untuk aplikasi manajemen keuangan pribadi. Teknologi: JavaScript (93.4%) dan PL/pgSQL (6.6%).</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">JavaScript</span><span class="tech-tag">PL/pgSQL</span></div>
+                <a href="https://github.com/akhariss/personal-finance-backend" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Personal Notes Backend</h3>
+                <p>Backend untuk aplikasi catatan pribadi. Stack: JavaScript (94.7%) dengan database PL/pgSQL (5.3%).</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">JavaScript</span><span class="tech-tag">PL/pgSQL</span></div>
+                <a href="https://github.com/akhariss/personal-notes-backend" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Sukinime</h3>
+                <p>Aplikasi layanan terkait anime. Dibangun dengan TypeScript (92.9%) dan PL/pgSQL (7.1%).</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">TypeScript</span><span class="tech-tag">PL/pgSQL</span></div>
+                <a href="https://github.com/akhariss/sukinime" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3>Noraa</h3>
+                <p>Website dengan komposisi: PHP (77.9%), CSS (10.2%), HTML (8.3%), dan JavaScript (3.6%).</p>
+              </div>
+              <div class="project-meta">
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">CSS</span><span class="tech-tag">HTML</span><span class="tech-tag">JS</span></div>
+                <a href="https://github.com/akhariss/noraa" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="section-header">
+        <h2 class="section-title">Expertise</h2>
+        <span class="section-subtitle">Skills & Certifications</span>
+      </div>
+      <div class="expertise-grid">
+        <div>
+          <h3 style="font-size: 1rem; margin-bottom: 16px; color: var(--text-muted); font-weight: 500;">Technical Stack</h3>
+          <div class="skill-cloud">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">PL/pgSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">REST API</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Azure DevOps</span>
+            <span class="skill-pill">JWT Auth</span>
+            <span class="skill-pill">Machine Learning</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 1rem; margin-bottom: 16px; color: var(--text-muted); font-weight: 500;">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item"><div><div class="cert-name">Azure DevOps Bootcamp: Zero to Hero</div><div class="cert-issuer">Udemy • Nov 2024</div></div><span class="cert-badge">DevOps</span></div>
+            <div class="cert-item"><div><div class="cert-name">Belajar Membuat Aplikasi Back-End</div><div class="cert-issuer">Dicoding Indonesia • Sep 2024</div></div><span class="cert-badge">Backend</span></div>
+            <div class="cert-item"><div><div class="cert-name">Cloud Practitioner Essentials (AWS)</div><div class="cert-issuer">Dicoding Indonesia • Sep 2024</div></div><span class="cert-badge">Cloud</span></div>
+            <div class="cert-item"><div><div class="cert-name">Introduction to Cybersecurity</div><div class="cert-issuer">Cisco • Nov 2024</div></div><span class="cert-badge">Security</span></div>
+            <div class="cert-item"><div><div class="cert-name">Belajar Machine Learning untuk Pemula</div><div class="cert-issuer">Dicoding Indonesia • Jun 2024</div></div><span class="cert-badge">AI/ML</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <img src="https://konfigura.cloud/1719029813266.jfif" alt="Abdul Kharis" class="footer-photo">
+        <div>
+          <p class="footer-name">Abdul Kharis</p>
+          <p class="footer-details">NIM: 2388010004 • Informatics</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/akhariss" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/abdul-kharis" target="_blank">LinkedIn</a>
+          <a href="mailto:abdulkharis2234@gmail.com">Email</a>
+        </div>
+            <p class="footer-copy" style="text-align: center; font-weight: bold;">Dideploy oleh: Abdul Kharis-2388010004</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // SLIDER LOGIC
+    let currentSlide = 0;
+    const track = document.getElementById('sliderTrack');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = 2;
+
+    function updateSlider() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+    }
+
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      updateSlider();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlider();
+    }
+
+    // DOWNLOAD CV (REAL FILE, NOT PRINT)
+    function downloadCV() {
+      const cvContent = `
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>CV - Abdul Kharis</title>
+<style>body{font-family:system-ui,sans-serif;max-width:800px;margin:40px auto;padding:20px;color:#111;line-height:1.6}h1{border-bottom:2px solid #333;padding-bottom:10px}h2{margin-top:25px;color:#2563eb}.tag{background:#f0f0f0;padding:4px 8px;border-radius:4px;font-size:0.9em;margin-right:6px}.project{margin-bottom:20px;padding:15px;border:1px solid #ddd;border-radius:8px}.footer{margin-top:40px;font-size:0.9em;color:#666;border-top:1px solid #eee;padding-top:15px}</style>
+</head>
+<body>
+<h1>Abdul Kharis</h1>
+<p><strong>Full Stack Developer</strong><br>Informatics @ UIN Siber Syekh Nurjati Cirebon<br>Cirebon, Jawa Barat • abdulkharis2234@gmail.com</p>
+
+<h2>Professional Summary</h2>
+<p>Mahasiswa Informatika dengan fokus pada pengembangan aplikasi web scalable, REST API, dan cloud infrastructure. Berpengalaman membangun sistem manajemen data, otomatisasi administrasi, dan solusi berdampak nyata.</p>
+
+<h2>Selected Projects</h2>
+<div class="project"><strong>Kreme Dessert House</strong><br>Aplikasi bisnis dessert/kue. JavaScript (90.4%), PL/pgSQL (9.6%).</div>
+<div class="project"><strong>Garda ⭐ — PKL Management</strong><br>Logbook digital, laporan otomatis, efisiensi admin. PHP (80.7%), CSS, JS.</div>
+<div class="project"><strong>Personal Finance & Notes Backend</strong><br>REST API tracking keuangan & catatan. JavaScript, PL/pgSQL, JWT Auth.</div>
+<div class="project"><strong>Informatics Fair Vol. 1</strong><br>Platform event nasional, verifikasi otomatis, dashboard admin. HTML/CSS/JS.</div>
+<div class="project"><strong>Gemini Canvas & Notaris Online</strong><br>Dashboard kampus real-time & tracking dokumen notaris. Full Stack & PHP/MySQL.</div>
+
+<h2>Technical Skills</h2>
+<p><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">PHP</span><span class="tag">PL/pgSQL</span><span class="tag">REST API</span><span class="tag">Git</span><span class="tag">AWS</span><span class="tag">Azure DevOps</span><span class="tag">Machine Learning</span></p>
+
+<h2>Certifications</h2>
+<p>• Azure DevOps Bootcamp: Zero to Hero (Udemy, Nov 2024)<br>
+• Belajar Membuat Aplikasi Back-End (Dicoding, Sep 2024)<br>
+• Cloud Practitioner Essentials AWS (Dicoding, Sep 2024)<br>
+• Introduction to Cybersecurity (Cisco, Nov 2024)<br>
+• Belajar Machine Learning & Dasar AI (Dicoding, Jun 2024)</p>
+
+<div class="footer"><strong>Abdul Kharis</strong> • NIM: 2388010004 • www.linkedin.com/in/abdul-kharis • konfigura.cloud</div>
+</body></html>`;
+
+      const blob = new Blob([cvContent], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'CV_Abdul_Kharis.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // SMOOTH SCROLL & FADE IN
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(sec => {
+      sec.style.opacity = '0';
+      sec.style.transform = 'translateY(20px)';
+      sec.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>

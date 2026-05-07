@@ -154,7 +154,7 @@ Masukkan password root yang sudah dibuat saat hardening.
 #### b. Buat Database Baru
 
 ```sql
-CREATE DATABASE dbcompro_NIM;
+CREATE DATABASE dbcompro_2388010004;
 ```
 
 Ganti `NIM` dengan NIM kamu. Contoh: `dbcompro_2388010004`
@@ -166,7 +166,7 @@ Ganti `NIM` dengan NIM kamu. Contoh: `dbcompro_2388010004`
 #### c. Buat User Baru
 
 ```sql
-CREATE USER 'usrcompro_NIM'@'localhost' IDENTIFIED BY '[PASSWORD]';
+CREATE USER 'usrcompro_2388010004'@'localhost' IDENTIFIED BY '2388010004';
 ```
 
 Ganti:

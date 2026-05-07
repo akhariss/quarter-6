@@ -25,9 +25,8 @@
 
 - Install PM2 untuk session state -> npm intall pm2@latest -g
 - pm2 -v
-- ![1778056422010](https://file+.vscode-resource.vscode-cdn.net/c%3A/quarter-6/adm-server/meet10/image/migration/1778056422010.png)
 
-![1778058283882](https://file+.vscode-resource.vscode-cdn.net/c%3A/quarter-6/adm-server/meet10/image/migration/1778058283882.png)
+  ![1778130668661](image/migration/1778130668661.png)
 
 8. Export - Import DB
 
@@ -38,8 +37,7 @@
    - use dbcompro_NIM;
    - Copy Paste Query ctrl+A file sql export -> Klik Kanan di terminal AWS
      -show tables;
-
-   ![1778058810515](https://file+.vscode-resource.vscode-cdn.net/c%3A/quarter-6/adm-server/meet10/image/migration/1778058810515.png)
+   - ![1778130639962](image/migration/1778130639962.png)
 9. kita sesuaikan file .env
 
 - cd standalone
